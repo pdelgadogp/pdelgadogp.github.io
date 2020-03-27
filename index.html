@@ -40,9 +40,9 @@
     <!--<div class="container"></div>-->
     <div class="container justify-content-center">
       <div class="row row-top" style="margin:0 !important;padding: 0 !important;">
-        <div class="container justify-content-center logo-hidden">
+        <!--<div class="container justify-content-center logo-hidden">
           <img src="img/logos/Isotipo-landing-web-2.png" style="height: 60px;">
-        </div>
+        </div>-->
         <div class="container justify-content-center menu-hidden">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border-radius: 0px; margin-top: 30px;">
             <span class="navbar-toggler-icon"></span>
@@ -53,13 +53,16 @@
           <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase" style="margin-top: 0px;">
               <li class="nav-item">
-                <a class="nav-link nav-link-scroll js-scroll-trigger" onclick="scrollToTop();" style="cursor: pointer;">Inicio</a>
+                <a class="nav-link nav-link-scroll js-scroll-trigger" onclick="window.scrollTo({top:0,behavior:'smooth'});" style="cursor: pointer;">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="about.html">About D/D</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="proyectos.html">Proyectos</a>
+              </li>
+              <li class="nav-item nav-item-hide" onclick="window.scrollTo({top:0,behavior:'smooth'});" style="cursor: pointer;">
+                <img src="img/logos/Isotipo-landing-web-2.png" style="height: 50px;margin-left: 20px;margin-right:20px;margin-bottom: 4px;">
               </li>
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="papeleria.html">Papelería</a>
@@ -104,17 +107,14 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <!--<h3 class="section-subheading text-muted">"Experimenta, falla, aprende, repite."</h3>-->
-          <img src="img/collage-carmen.jpg" style="margin-bottom: 50px; width: 100%">
+          <img src="img/collage-carmen.jpg" style="margin-bottom: 50px; width: 80%">
         </div>
         <div class="col-lg-12 text-center">
           <a href="about.html">
             <button id="sendMessageButton" class="button-normal btn btn-primary text-uppercase" type="submit" style="border-radius: 0 !important;">Saber más</button>
           </a>
-
         </div>
       </div>
-
-
 
       <hr class="nav-link-scroll" style="margin-top:50px;margin-bottom: 50px;width: 93%">
       <div class="row text-center">
