@@ -9,44 +9,40 @@
   margin-bottom: 10px;
 }
 
-header {
+#SLIDE_BG {
   position: relative;
-  background-color: black;
+  background-image: url('../img/header-bg.jpeg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  animation: slideBg 30s linear infinite;
+  animation-timing-function: ease-in-out;
   height: 100vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
 }
 
-header video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 0;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+#SLIDE_BG_LOAD {
+  animation: slide 2s;
+}
+
+@keyframes slideBg {
+  0% {
+    background-image: url('../img/header-bg.jpeg');
+  }
+  33% {
+    background-image: url('../img/header-bg-2.jpg');
+  }
+  66% {
+    background-image: url('../img/header-bg-3.jpeg');
+  }
 }
 
 header .container {
   position: relative;
   z-index: 2;
-}
-
-header .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0.5;
-  z-index: 1;
 }
 
 .photo-box {
