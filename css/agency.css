@@ -16,19 +16,19 @@
   background-size: cover;
   background-repeat: no-repeat;
   backface-visibility: hidden;
-  animation: slideBg 30s linear infinite;
-  animation-timing-function: ease-in-out;
+  animation: slideBg 5s linear infinite;
+  /*animation-timing-function: ease-in-out;*/
   height: 100vh;
   min-height: 25rem;
   width: 100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
-#SLIDE_BG_LOAD {
+/*#SLIDE_BG_LOAD {
   animation: slide 2s;
-}
+}*/
 
-@keyframes slideBg {
+/*@keyframes slideBg {
   0% {
     background-image: url('../img/header-bg.jpeg');
   }
@@ -38,7 +38,7 @@
   66% {
     background-image: url('../img/header-bg-3.jpeg');
   }
-}
+}*/
 
 header .container {
   position: relative;
