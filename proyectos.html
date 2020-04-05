@@ -17,31 +17,13 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT|Playfair+Display&display=swap" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
   <link href="https://db.onlinewebfonts.com/c/eb41b9457cbca3a9252380882ea05327?family=Baskerville+MT+Std" rel="stylesheet" type="text/css"/>
   <link href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/agency.css" rel="stylesheet">
-
-    <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Contact form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/agency.js"></script>
-  <script type="text/javascript" src="js/instafeed.min.js"></script>
-
-  <script>
-    document.getElementById("year").innerHTML = new Date().getFullYear();
-  </script>
 
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -55,24 +37,32 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg" id="mainNavFixed">
+  <nav class="navbar navbar-expand-lg navbar-shrink fixed-top" id="mainNavFixed">
     <div class="container justify-content-center">
-      <div class="row row-top">
-        <div class="container justify-content-center logo-display">
+      <div class="row row-top" style="margin:0 !important;padding: 0 !important;">
+        <!--<div class="container justify-content-center logo-display">
           <img src="img/logos/Isotipo-landing-web-2.png" style="height: 60px;">
-        </div> 
-        
-        <div class="container justify-content-center" style="margin-top: 5px;">
+        </div>--> 
+        <div class="container justify-content-center menu-hidden">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border-radius: 0px; margin-top: 30px;">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="container justify-content-center">
           <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase" style="margin-top: 0px;">
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger nav-link-scroll" href="index.html" style="cursor: pointer;">Inicio</a>
+                <a class="nav-link nav-link-scroll" href="index.html" style="cursor: pointer;">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-link-scroll" href="about.html">About D/D</a>
+                <a class="nav-link nav-link-scroll" href="about.html" style="cursor: pointer;">About D/D</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-link-scroll" href="proyectos.html">Proyectos</a>
+                <a class="nav-link nav-link-scroll" onclick="window.scrollTo({top:0,behavior:'smooth'});">Proyectos</a>
+              </li>
+              <li class="nav-item" >
+                <a href="index.html"><img src="img/logos/Isotipo-landing-web-2.png" style="height: 50px;margin-left: 20px;margin-right:20px;margin-bottom: 4px;"></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link nav-link-scroll" href="papeleria.html">Papelería</a>
@@ -93,118 +83,53 @@
     </div>
   </nav>
 
+  <section class="page-section" id="portfolio">
 
-  <!-- Navigation 
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavFixed">
-    <div class="container justify-content-center">
-      <div class="row row-top">
-        <div class="container justify-content-center logo-display">
-          <img src="img/logos/Isotipo-landing-web-2.png" style="height: 60px;">
-        </div>
-        <div class="container justify-content-center menu-hidden">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border-radius: 0px; margin-top: 30px;">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-        
-        <div class="container justify-content-center" style="margin-bottom: 0px;">
-          <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
-            <ul class="navbar-nav text-uppercase" style="margin-top: 0px;">
-              <li class="nav-item">
-                <a class="nav-link nav-link-scroll js-scroll-trigger" onclick="scrollToTop();" style="cursor: pointer;">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-scroll js-scroll-trigger" href="about.html">About D/D</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="proyectos.html">Proyectos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="papeleria.html">Papelería</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="bordados.html">Bordados</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="contacto.html">Contacto</a>
-              </li>
-            </ul>
+    <div class="container py-4" style="text-align: center; max-width: 850px;">
+      <div class="row h-100 align-items-center py-4">
+        <h1 class="text-title" style="font-size:1.75em">Proyectos</h1>
+        <!-- Portfolio Gallery Grid -->
+        <div class="row" style="margin-top:1em;padding-left: 0em;padding-right: 0em;">
+          <div class="column col-md-4">
+            <div class="content">
+              <img src="https://images.pexels.com/photos/2089949/pexels-photo-2089949.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Mountains" style="width:90%;height: 90%;object-fit: cover;">
+              <h1 class="text-title" style="font-size:1.25em;color: dimgrey !important;">Suárez</h1>
+            </div>
+            <div class="content">
+              <img src="https://images.pexels.com/photos/356372/pexels-photo-356372.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Mountains" style="width:100%;height: 100%;object-fit: cover;">
+            </div>
           </div>
-        </div>
-        <div class="container justify-content-center navbar-line">
-          <hr class="line-navbar" style="border-color: white">
+          <div class="column col-md-4">
+            <div class="content">
+              <img src="img/portfolio/02-full.jpg" alt="Lights" style="width:100%;height: 100%;object-fit: cover;">
+            </div>
+            <div class="content">
+              <img src="img/portfolio/03-full.jpg" alt="Nature" style="width:100%;height: 100%;object-fit: cover;">
+            </div>
+          </div>
+          <div class="column col-md-4">
+            <div class="content">
+              <img src="img/portfolio/03-full.jpg" alt="Nature" style="width:100%;height: 100%;object-fit: cover;">
+            </div><div class="content">
+              <img src="img/portfolio/04-full.jpg" alt="Mountains" style="width:100%;height: 100%;object-fit: cover;">
+            </div>
+          </div>
+        <!-- END GRID -->
         </div>
       </div>
     </div>
-  </nav>-->
-
-  <!-- Header
-  <header class="masthead">
-
-  </header> -->
-
-
-
-  <section class="page-section" id="portfolio" style="padding:1em;">
-
-    <div class="container container-fluid p-0" style="text-align: center; max-width: 850px;">
-      <h1 class="text-title" style="font-size:1.75em">Proyectos</h1>
-      <!--<p class="text-title" style="font-size:1.4em">En Demihermana Design tenemos proyectos únicos: <a href="papeleria.html">Papelería</a>, <a href="bordados.html">Bordados</a> y más.</p>
-      <p class="text-title" style="font-size: 1.4em;">Aquí puedes ver los últimos proyectos que hemos realizado con todo el cariño:</p>-->
-
-      <!-- Portfolio Gallery Grid -->
-      <div class="row" style="margin-top:1em;padding-left: 0em;padding-right: 0em;">
-        <div class="column col-md-4">
-          <div class="content">
-            <img src="https://images.pexels.com/photos/2089949/pexels-photo-2089949.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Mountains" style="width:90%;height: 90%;object-fit: cover;">
-            <h1 class="text-title" style="font-size:1.25em;color: dimgrey !important;">Suárez</h1>
-            <!--<p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>-->
-          </div>
-          <div class="content">
-            <img src="https://images.pexels.com/photos/356372/pexels-photo-356372.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Mountains" style="width:100%;height: 100%;object-fit: cover;">
-            <!--<h3>My Work</h3>
-            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>-->
-          </div>
-        </div>
-        <div class="column col-md-4">
-          <div class="content">
-            <img src="img/portfolio/02-full.jpg" alt="Lights" style="width:100%;height: 100%;object-fit: cover;">
-            <!--<h3>My Work</h3>
-            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>-->
-          </div>
-          <div class="content">
-            <img src="img/portfolio/03-full.jpg" alt="Nature" style="width:100%;height: 100%;object-fit: cover;">
-            <!--<h3>My Work</h3>
-            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>-->
-          </div>
-        </div>
-        <div class="column col-md-4">
-          <div class="content">
-            <img src="img/portfolio/03-full.jpg" alt="Nature" style="width:100%;height: 100%;object-fit: cover;">
-            <!--<h3>My Work</h3>
-            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>-->
-          </div><div class="content">
-            <img src="img/portfolio/04-full.jpg" alt="Mountains" style="width:100%;height: 100%;object-fit: cover;">
-            <!--<h3>My Work</h3>
-            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>-->
-          </div>
-        </div>
-      <!-- END GRID -->
-      </div>
-
-      <hr class="nav-link-scroll" style="margin-top:50px;margin-bottom: 50px;width: 93%">
+    <div class="container">
+      <hr style="margin-top:50px;margin-bottom: 50px;width: 93%;border-color: #dbafa9 !important;height: 12px !important">
       <div class="row text-center">
         <div class="col-md-12" style="margin-bottom:20px;">
-          <p class="text-normal text-uppercase">Síguenos en Instragram</p>
+          <p class="text-normal text-uppercase" style="color:rgb(187,117,107);text-align: center">Síguenos en Instagram</p>
         </div>
-
-        <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-a3aae205-7432-4ca1-bc34-7292e624632b"></div> -->
-
-        <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="http://lightwidget.com/widgets/4c973eced5625b7683011bed77fce918.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+        <div class="col-md-12">
+        <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/4c973eced5625b7683011bed77fce918.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:90%;border:0;overflow:hidden;"></iframe>
+        </div>
       </div>
-
     </div>
+
   </section>
 
 
