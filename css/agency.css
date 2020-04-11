@@ -3,9 +3,6 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
-* {
-  transition: all 0.3s ease-out;
-}
 
 .menu-hidden{
   text-align: center;
@@ -100,20 +97,34 @@ header .container {
 }
 
 .text-normal {
-  font-family: 'Montserrat' !important;
+  font-family: 'Nunito Sans', sans-serif;
   color: rgb(43,43,43);
   padding:0.5em;
   text-align: justify;
 }
 
 .text-title {
-  font-size: 50%;
   font-weight: 400;
-  padding: 0.75em 0;
   letter-spacing: 1px;
   font-family: 'Playfair Display';
   color: #bb756b !important;
   padding:0.5em;
+}
+
+.project-title{
+  font-size: 1.25em !important;
+  letter-spacing: 1px;
+  font-family: 'Playfair Display';
+  color: grey;
+  padding:0.5em;
+  letter-spacing: 2px;
+}
+
+.project-subtitle {
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #484848;
+  padding: 0.5em;
 }
 
 .footer {
@@ -155,21 +166,6 @@ h5,
 h6 {
   font-weight: 100;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-}
-
-.page-section h2.section-heading {
-  font-size: 40px;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
-.page-section h3.section-subheading {
-  font-size: 20px;
-  font-weight: 400;
-  font-style: italic;
-  margin-bottom: 75px;
-  text-transform: none;
-  font-family: 'Baskerville MT Std', 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 @media (min-width: 768px) {
@@ -243,11 +239,6 @@ img::-moz-selection {
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-#mainNav .navbar-brand {
-  color: #fed136;
-  font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-}
-
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
   color: #fec503;
 }
@@ -310,14 +301,6 @@ header.masthead .intro-text {
   padding-bottom: 100px;
 }
 
-header.masthead .intro-text .intro-lead-in {
-  font-size: 22px;
-  font-style: italic;
-  line-height: 22px;
-  margin-bottom: 25px;
-  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-}
-
 header.masthead .intro-text .intro-heading {
   font-size: 50px;
   font-weight: 700;
@@ -331,13 +314,6 @@ header.masthead .intro-text .intro-heading {
     /*padding-top: 200px;*/
     padding-top: 35vh;
     padding-bottom: 200px;
-  }
-  header.masthead .intro-text .intro-lead-in {
-    font-size: 40px;
-    font-style: italic;
-    line-height: 40px;
-    margin-bottom: 25px;
-    font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   }
   header.masthead .intro-text .intro-heading {
     font-size: 75px;
@@ -400,11 +376,9 @@ ul.social-buttons li a {
   display: block;
   top: 0px;
   position: relative;
-  background-color: #f2f8f9;
-  padding: 32px 24px;
   margin: auto;
   text-decoration: none;
-  z-index: 0;
+  /*z-index: 0;*/
   overflow: hidden;
   border: 1px solid #f2f8f9;
   height: 250px;
@@ -413,24 +387,24 @@ ul.social-buttons li a {
 }
 
 .card:hover {
-  transition: all 0.2s ease-out;
+  /*transition: all 0.2s ease-in-out;
   box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
   top: -4px;
-  border: 1px solid #cccccc;
-  background-color: white;
+  border: 1px solid #cccccc;*/
+  background: rgba(237, 226, 221, .5);
 }
 
 .card:hover:before {
   transform: scale(2.15);
 }
 
-.text-card{
-  padding: 0.75em 0;
-  letter-spacing: 1px;
-  font-family: 'Playfair Display';
-  color: grey;
-  padding:0.5em;
-  letter-spacing: 2px;
+.card-img {
+  width: 100%;
+  border-radius: 0px;
+}
+
+.card-img:hover{
+  opacity: .3;
 }
 
 
@@ -473,19 +447,3 @@ ul.social-buttons li a {
   padding-left: 20px;
   padding-right: 20px;
 }
-
-
-.lightwidget--hover-show-instagram-icon .lightwidget__photo:before {
-  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCiA8Zz4KICA8dGl0bGU+YmFja2dyb3VuZDwvdGl0bGU+CiAgPHJlY3QgZmlsbD0ibm9uZSIgaWQ9ImNhbnZhc19iYWNrZ3JvdW5kIiBoZWlnaHQ9IjQwMiIgd2lkdGg9IjU4MiIgeT0iLTEiIHg9Ii0xIi8+CiA8L2c+CiA8Zz4KICA8dGl0bGU+TGF5ZXIgMTwvdGl0bGU+CiAgPHBhdGggaWQ9InN2Z18xIiBmaWxsPSIjYjY5ZTkyIiBkPSJtMjU2LDQ5LjQ3MWM2Ny4yNjYsMCA3NS4yMzMsMC4yNTcgMTAxLjgsMS40NjljMjQuNTYyLDEuMTIxIDM3LjksNS4yMjQgNDYuNzc4LDguNjc0YTc4LjA1Miw3OC4wNTIgMCAwIDEgMjguOTY2LDE4Ljg0NWE3OC4wNTIsNzguMDUyIDAgMCAxIDE4Ljg0NSwyOC45NjZjMy40NSw4Ljg3NyA3LjU1NCwyMi4yMTYgOC42NzQsNDYuNzc4YzEuMjEyLDI2LjU2NSAxLjQ2OSwzNC41MzIgMS40NjksMTAxLjhzLTAuMjU3LDc1LjIzMyAtMS40NjksMTAxLjhjLTEuMTIxLDI0LjU2MiAtNS4yMjUsMzcuOSAtOC42NzQsNDYuNzc4YTgzLjQyNyw4My40MjcgMCAwIDEgLTQ3LjgxMSw0Ny44MTFjLTguODc3LDMuNDUgLTIyLjIxNiw3LjU1NCAtNDYuNzc4LDguNjc0Yy0yNi41NiwxLjIxMiAtMzQuNTI3LDEuNDY5IC0xMDEuOCwxLjQ2OXMtNzUuMjM3LC0wLjI1NyAtMTAxLjgsLTEuNDY5Yy0yNC41NjIsLTEuMTIxIC0zNy45LC01LjIyNSAtNDYuNzc4LC04LjY3NGE3OC4wNTEsNzguMDUxIDAgMCAxIC0yOC45NjYsLTE4Ljg0NWE3OC4wNTMsNzguMDUzIDAgMCAxIC0xOC44NDUsLTI4Ljk2NmMtMy40NSwtOC44NzcgLTcuNTU0LC0yMi4yMTYgLTguNjc0LC00Ni43NzhjLTEuMjEyLC0yNi41NjQgLTEuNDY5LC0zNC41MzIgLTEuNDY5LC0xMDEuOHMwLjI1NywtNzUuMjMzIDEuNDY5LC0xMDEuOGMxLjEyMSwtMjQuNTYyIDUuMjI0LC0zNy45IDguNjc0LC00Ni43NzhhNzguMDUyLDc4LjA1MiAwIDAgMSAxOC44NDcsLTI4Ljk2N2E3OC4wNTMsNzguMDUzIDAgMCAxIDI4Ljk2NiwtMTguODQ1YzguODc3LC0zLjQ1IDIyLjIxNiwtNy41NTQgNDYuNzc4LC04LjY3NGMyNi41NjUsLTEuMjEyIDM0LjUzMiwtMS40NjkgMTAxLjgsLTEuNDY5bTAsLTQ1LjM5MWMtNjguNDE4LDAgLTc3LDAuMjkgLTEwMy44NjYsMS41MTZjLTI2LjgxNSwxLjIyNCAtNDUuMTI3LDUuNDgyIC02MS4xNTEsMTEuNzFhMTIzLjQ4OCwxMjMuNDg4IDAgMCAwIC00NC42MiwyOS4wNTdhMTIzLjQ4OCwxMjMuNDg4IDAgMCAwIC0yOS4wNjUsNDQuNjJjLTYuMjIzLDE2LjAyNSAtMTAuNDgxLDM0LjMzNyAtMTEuNyw2MS4xNTJjLTEuMjMxLDI2Ljg2NiAtMS41MjEsMzUuNDQ4IC0xLjUyMSwxMDMuODY2czAuMjksNzcgMS41MjEsMTAzLjg2NmMxLjIyNCwyNi44MTUgNS40ODIsNDUuMTI3IDExLjcxLDYxLjE1MWExMjMuNDg5LDEyMy40ODkgMCAwIDAgMjkuMDU3LDQ0LjYyYTEyMy40ODYsMTIzLjQ4NiAwIDAgMCA0NC42MiwyOS4wNTdjMTYuMDI1LDYuMjI4IDM0LjMzNywxMC40ODYgNjEuMTUxLDExLjcxYzI2Ljg3LDEuMjI2IDM1LjQ0OSwxLjUxNiAxMDMuODY2LDEuNTE2czc3LC0wLjI5IDEwMy44NjYsLTEuNTE2YzI2LjgxNSwtMS4yMjQgNDUuMTI3LC01LjQ4MiA2MS4xNTEsLTExLjcxYTEyOC44MTcsMTI4LjgxNyAwIDAgMCA3My42NzcsLTczLjY3N2M2LjIyOCwtMTYuMDI1IDEwLjQ4NiwtMzQuMzM3IDExLjcxLC02MS4xNTFjMS4yMjYsLTI2Ljg3IDEuNTE2LC0zNS40NDkgMS41MTYsLTEwMy44NjZzLTAuMjksLTc3IC0xLjUxNiwtMTAzLjg2NmMtMS4yMjQsLTI2LjgxNSAtNS40ODIsLTQ1LjEyNyAtMTEuNzEsLTYxLjE1MWExMjMuNDg2LDEyMy40ODYgMCAwIDAgLTI5LjA1NywtNDQuNjJhMTIzLjQ4NywxMjMuNDg3IDAgMCAwIC00NC42MjMsLTI5LjA2M2MtMTYuMDI1LC02LjIyMyAtMzQuMzM3LC0xMC40ODEgLTYxLjE1MiwtMTEuN2MtMjYuODY2LC0xLjIzMSAtMzUuNDQ4LC0xLjUyMSAtMTAzLjg2NiwtMS41MjFsMCwwbDAuMDAyLDB6Ii8+CiAgPHBhdGggaWQ9InN2Z18yIiBmaWxsPSIjYjY5ZTkyIiBkPSJtMjU2LDEyNi42MzVhMTI5LjM2NSwxMjkuMzY1IDAgMSAwIDEyOS4zNjUsMTI5LjM2NWExMjkuMzY1LDEyOS4zNjUgMCAwIDAgLTEyOS4zNjUsLTEyOS4zNjV6bTAsMjEzLjMzOGE4My45NzMsODMuOTczIDAgMSAxIDgzLjk3NCwtODMuOTczYTgzLjk3NCw4My45NzQgMCAwIDEgLTgzLjk3NCw4My45NzN6Ii8+CiAgPGNpcmNsZSBpZD0ic3ZnXzMiIGZpbGw9IiNiNjllOTIiIHI9IjMwLjIzIiBjeT0iMTIxLjUyNCIgY3g9IjM5MC40NzYiLz4KIDwvZz4KPC9zdmc+) no-repeat 50% 50% rgba(237, 226, 221, .8") !important;
-  background-size: 30% 30% !important;
-  content: "";
-  height: 100%;
-  left: 0;
-  line-height: 0;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  transition: opacity .3s ease;
-  visibility: hidden;
-  width: 100%;
-  z-index: 2; }
