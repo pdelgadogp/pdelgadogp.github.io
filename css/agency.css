@@ -98,7 +98,7 @@ header .container {
 
 .text-normal {
   font-family: 'Nunito Sans', sans-serif;
-  color: rgb(43,43,43);
+  color: rgb(55,55,55);
   padding:0.5em;
   text-align: justify;
 }
@@ -116,12 +116,13 @@ header .container {
   letter-spacing: 1px;
   font-family: 'Playfair Display';
   color: grey;
-  padding:0.5em;
+  padding:0.3em;
   letter-spacing: 2px;
 }
 
 .project-subtitle {
-  text-align: center;
+  text-align: justify;
+  text-align-last: center;
   font-family: 'Nunito Sans', sans-serif;
   color: #484848;
   padding: 0.5em;
