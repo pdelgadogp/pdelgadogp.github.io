@@ -112,12 +112,12 @@ header .container {
 }
 
 .project-title{
-  font-size: 1.25em !important;
+  font-size: 1.1em !important;
   letter-spacing: 1px;
   font-family: 'Playfair Display';
   color: grey;
   padding:0.3em;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 }
 
 .project-subtitle {
