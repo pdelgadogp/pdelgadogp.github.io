@@ -106,7 +106,7 @@ header .container {
 .text-title {
   font-weight: 400;
   letter-spacing: 1px;
-  font-family: 'Playfair Display';
+  font-family: 'Cormorant', serif;
   color: #bb756b !important;
   padding:0.5em;
 }
@@ -114,7 +114,7 @@ header .container {
 .project-title{
   font-size: 1.1em !important;
   letter-spacing: 1px;
-  font-family: 'Playfair Display';
+  font-family: 'Cormorant', serif;
   color: grey;
   padding:0.3em;
   letter-spacing: 1.5px;
