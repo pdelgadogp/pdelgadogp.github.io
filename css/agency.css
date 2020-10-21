@@ -338,6 +338,9 @@ img::-moz-selection {
   .nav-item-hidden{
     display: none;
   }
+  #img-navhidden{
+    display:inline !important;
+  }
 }
 
 #mainNavFixed {
