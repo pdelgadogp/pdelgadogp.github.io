@@ -31,9 +31,16 @@
 
 }
 
-.menu-hidden{
-  text-align: center;
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }
+
+/*.menu-hidden{
+  text-align: center;
+}*/
 
 #SLIDE_BG {
   position: relative;
@@ -101,7 +108,7 @@ header .container {
 .nav-link-scroll {
   color: #bb756b !important;
   border-color: #dbafa9 !important;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .nav-item-show {
@@ -327,6 +334,9 @@ img::-moz-selection {
   }
   #container-horizontalLine{
     display: none !important;
+  }
+  .nav-item-hidden{
+    display: none;
   }
 }
 
