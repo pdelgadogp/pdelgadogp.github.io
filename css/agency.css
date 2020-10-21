@@ -33,7 +33,6 @@
 
 .menu-hidden{
   text-align: center;
-  margin-bottom: 10px;
 }
 
 #SLIDE_BG {
@@ -110,6 +109,10 @@ header .container {
 }
 .nav-item-hide {
   display: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(187,117,107, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
 
 .button-normal {
@@ -256,16 +259,18 @@ img::-moz-selection {
 
 #mainNav{
   background-color: #f2efeb;
+  /*background-color: #bb756b;*/
 }
 
 #mainNav .navbar-toggler {
-  font-size: 12px;
+  /*font-size: 12px;*/
   right: 0;
   padding: 13px;
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: #bb756b;
+  background-color: #f2efeb;
+  /*background-color: #bb756b;*/
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !important;
 }
 
@@ -303,13 +308,25 @@ img::-moz-selection {
     padding: 0.5em 2em !important;
   }
   #mainNav.navbar-shrink {
-    padding-top: 8px;
+    padding-top: 25px;
     padding-bottom: 0;
     background-color: #f2efeb;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
     padding: 12px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #mainNav .navbar-nav .nav-item .nav-link, #mainNavFixed .navbar-nav .nav-item .nav-link{
+    color: #bb756b;
+  }
+  #container-mainNav {
+    justify-content: left !important;
+  }
+  #container-horizontalLine{
+    display: none !important;
   }
 }
 
