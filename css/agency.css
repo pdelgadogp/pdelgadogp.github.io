@@ -175,6 +175,7 @@ header .container {
   padding-left: 10px !important;
   padding-right: 10px !important;
   margin-top: 20px;
+  margin-right: 0px !important;
 }
 
 body {
@@ -208,11 +209,9 @@ h6 {
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-@media (min-width: 768px) {
-  section {
-    padding-top: 90px;
-    padding-bottom: 60px;
-  }
+section {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 ::-moz-selection {
@@ -315,8 +314,8 @@ img::-moz-selection {
     padding: 0.5em 2em !important;
   }
   #mainNav.navbar-shrink {
-    padding-top: 25px;
-    padding-bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 5px;
     background-color: #f2efeb;
   }
   #mainNav.navbar-shrink .navbar-brand {
@@ -341,6 +340,9 @@ img::-moz-selection {
   #img-navhidden{
     display:inline !important;
   }
+  #logo-landing{
+    width:80% !important;
+  }
 }
 
 #mainNavFixed {
@@ -357,8 +359,7 @@ header.masthead {
 }
 
 header.masthead .intro-text {
-  padding-top: 150px;
-  padding-bottom: 100px;
+  padding-top: 40vh;
 }
 
 header.masthead .intro-text .intro-heading {
