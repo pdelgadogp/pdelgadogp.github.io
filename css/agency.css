@@ -109,8 +109,7 @@ header .container {
 
 .nav-link-scroll {
   color: #bb756b !important;
-  border-color: transparent !important;
-  /*border-color: #dbafa9 !important;*/
+  /*border-color: #dbafa9 !important;*/ 
   /*text-align: center;*/
 }
 
@@ -317,12 +316,13 @@ img::-moz-selection {
   #mainNav {
     /*padding-top: 35px;
     padding-bottom: 25px;*/
+    padding-top: 1em;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
     background-color: transparent;
   }
   #container-mainNav{
-    padding-top: 1em;
+    /*padding-top: 1em;*/
   }
 
   #mainNav .navbar-brand {
@@ -333,8 +333,6 @@ img::-moz-selection {
     padding: 0.5em 1em !important;
   }
   #mainNav.navbar-shrink {
-    /*padding-top: 35px;
-    padding-bottom: 25px;*/
     background-color: #f2efeb;
   }
   #mainNav.navbar-shrink .navbar-brand {
