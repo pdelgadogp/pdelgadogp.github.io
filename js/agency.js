@@ -43,21 +43,21 @@ var changeBackground = function(opt) {
   var style = img.currentStyle || window.getComputedStyle(img, false);
   var bi = style.backgroundImage.slice(4, -1).replace(/"/g, "");
   if (opt == 1) {
-    if (bi.includes('header-bg-1.jpeg')) {
-      document.getElementById('SLIDE_BG').style.backgroundImage="url(img/header-bg-3.jpeg)";
-    } else if (bi.includes('header-bg-2.jpeg')) {
-      document.getElementById('SLIDE_BG').style.backgroundImage="url(img/header-bg-1.jpeg)";
-    } else if (bi.includes('header-bg-3.jpeg')) {
-      document.getElementById('SLIDE_BG').style.backgroundImage="url(img/header-bg-2.jpeg)";
+    if (bi.includes('header-bg-11.jpeg')) {
+      document.getElementById('SLIDE_BG').style.backgroundImage="url(img/header-bg-33.jpeg)";
+    } else if (bi.includes('header-bg-22.jpeg')) {
+      document.getElementById('SLIDE_BG').style.backgroundImage="url(img/header-bg-11.jpeg)";
+    } else if (bi.includes('header-bg-33.jpeg')) {
+      document.getElementById('SLIDE_BG').style.backgroundImage="url(img/header-bg-22.jpeg)";
     }
 
   } else {
-    if (bi.includes('header-bg-1.jpeg')) {
-      document.getElementById('SLIDE_BG').style.backgroundImage="url(img/header-bg-2.jpeg)";
-    } else if (bi.includes('header-bg-2.jpeg')) {
-      document.getElementById('SLIDE_BG').style.backgroundImage="url(img/header-bg-3.jpeg)";
-    } else if (bi.includes('header-bg-3.jpeg')) {
-      document.getElementById('SLIDE_BG').style.backgroundImage="url(img/header-bg-1.jpeg)";
+    if (bi.includes('header-bg-11.jpeg')) {
+      document.getElementById('SLIDE_BG').style.backgroundImage="url(img/header-bg-22.jpeg)";
+    } else if (bi.includes('header-bg-22.jpeg')) {
+      document.getElementById('SLIDE_BG').style.backgroundImage="url(img/header-bg-33.jpeg)";
+    } else if (bi.includes('header-bg-33.jpeg')) {
+      document.getElementById('SLIDE_BG').style.backgroundImage="url(img/header-bg-11.jpeg)";
     }
   }
 };
