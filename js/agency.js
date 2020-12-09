@@ -22,13 +22,17 @@
         $(".nav-link").addClass("nav-link-scroll");
         $(".line-navbar").addClass("nav-link-scroll");
         $(".nav-item-hide").addClass("nav-item-show");
+        document.getElementById('myImage').src='img/logos/Isotipo-landing-web-2.png'
       } else {
         $("#mainNav").removeClass("navbar-shrink");
         $(".logo-hidden").removeClass("logo-display");
         $(".nav-link").removeClass("nav-link-scroll");
         $(".line-navbar").removeClass("nav-link-scroll");
         $(".nav-item-hide").removeClass("nav-item-show");
+        document.getElementById('myImage').src='img/logos/Isotipo-landing-web-2blanco.png'
       }
+    } else {
+      $(".nav-item-show").addClass("nav-item-hide");
     }
   };
   // Collapse now if page is not at top
@@ -37,6 +41,7 @@
   $(window).scroll(navbarCollapse);
 
 })(jQuery); // End of use strict
+
 
 var changeBackground = function(opt) {
   var img = document.getElementById('SLIDE_BG');
@@ -61,3 +66,10 @@ var changeBackground = function(opt) {
     }
   }
 };
+
+// Will execute myCallback every 0.5 seconds 
+var intervalID = window.setInterval(changeBackground, 10000);
+
+/*function myCallback() {
+ // Your code here
+}*/
