@@ -42,11 +42,7 @@ button:focus {
   text-align: center;
 }*/
 
-body > div {
-  transform: translate3d(0,0,0);
-  -webkit-transform: translate3d(0,0,0);
-  -webkit-overflow-scrolling: touch;
-}
+body > div { -webkit-overflow-scrolling: touch;}
 
 #SLIDE_BG {
   position: relative;
