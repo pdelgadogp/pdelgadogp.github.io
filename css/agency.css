@@ -42,8 +42,9 @@ button:focus {
   text-align: center;
 }*/
 
-* {
-  /*overflow-y: scroll;*/
+body > div {
+  transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0);
   -webkit-overflow-scrolling: touch;
 }
 
