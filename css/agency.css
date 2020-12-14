@@ -184,7 +184,11 @@ header .container {
 
 body {
   overflow-x: hidden;
-   max-width:100%;
+  max-width:100%;
+}
+
+.navbar-default{
+  max-width:100%;
 }
 
 p {
