@@ -43,7 +43,7 @@ button:focus {
 }*/
 
 * {
-    -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
 }
 
 #SLIDE_BG {
