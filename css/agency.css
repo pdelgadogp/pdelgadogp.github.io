@@ -183,7 +183,7 @@ header .container {
 }
 
 body {
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
   max-width:100%;
   position: absolute;
 }
