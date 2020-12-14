@@ -182,7 +182,8 @@ header .container {
   margin-right: 0px !important;
 }
 
-body {
+body, 
+row {
   overflow-x: hidden;
   max-width:100%;
 }
