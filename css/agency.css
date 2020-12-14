@@ -319,8 +319,8 @@ img::-moz-selection {
 @media (min-width: 768px) {
   #mainNav {
     /*padding-top: 35px;
-    padding-bottom: 25px;*/
-    padding-top: 1em;
+    padding-bottom: 25px;
+    padding-top: 1em;*/
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
     background-color: transparent;
