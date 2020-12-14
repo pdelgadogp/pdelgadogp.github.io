@@ -42,6 +42,10 @@ button:focus {
   text-align: center;
 }*/
 
+* {
+    -webkit-overflow-scrolling: touch;
+}
+
 #SLIDE_BG {
   position: relative;
   background-image: url('../img/header-bg-11.jpeg');
