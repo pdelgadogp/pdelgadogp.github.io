@@ -156,7 +156,7 @@ header .container {
 }
 
 .project-title{
-  font-size: 1.1em !important;
+  font-size: 1.7em !important;
   letter-spacing: 1px;
   font-family: 'Cormorant', serif;
   color: grey;
@@ -373,12 +373,9 @@ img::-moz-selection {
   }
 }
 
-#mainNavFixed {
-  /*padding-top: 15px;*/
-  padding-bottom: 0;
+#mainNavFixed{
   background-color: #f2efeb;
-  transition: padding-top 0.3s, padding-bottom 0.3s;
-  border: none;
+  padding: 0em;
 }
 
 header.masthead {

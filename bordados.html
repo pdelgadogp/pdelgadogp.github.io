@@ -1,30 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
-  <title>D/D - Proyectos</title>
-
-  <!-- Bootstrap core CSS -->
+  <title>Bordados - D/D</title>
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-  <link href="https://db.onlinewebfonts.com/c/eb41b9457cbca3a9252380882ea05327?family=Baskerville+MT+Std" rel="stylesheet" type="text/css"/>
-  <link href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
   <link href="css/agency.css" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
 
-    <!-- Bootstrap core JavaScript -->
+<body id="page-top" style="width:100%;">
+
+  <!-- ---------- NAVBAR ---------- -->
+
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNavFixed" style="-webkit-transition:background-color 200ms linear;-ms-transition: background-color 200ms linear;transition: background-color 200ms linear;">
+    <div class="container justify-content-center" id="container-mainNav">
+      <div class="row row-top" style="margin:0 !important;padding: 0 !important;">
+        <div class="container justify-content-center menu-hidden" style="padding:0em;display: inline;">
+          <div class="row" style="padding: 0.5em;">
+            <div class="col-2">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            </div>
+            <div class="col-8">
+              <img id="img-navhidden" src="img/logos/Logo-Rosa.png" style="margin-top:5px;width:100%;display:none;" onclick="window.scrollTo({top:0,behavior:'smooth'});">
+            </div>
+            <div class="col-2">
+            </div>
+          </div>
+        </div>
+        
+        <div class="container justify-content-center">
+          <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase" style="margin-top: 0px;margin-bottom: 0.5vh;">
+              <li class="nav-item">
+                <a class="nav-link nav-link-scroll js-scroll-trigger" href="index.html" style="cursor: pointer;">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-scroll js-scroll-trigger" href="about.html">About D/D</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-scroll js-scroll-trigger" onclick="window.scrollTo({top:0,behavior:'smooth'});" href="bordados.html">Bordados</a>
+              </li>
+              <li class="nav-item nav-item-show" onclick="window.scrollTo({top:0,behavior:'smooth'});" style="cursor: pointer;">
+                <a class="nav-link nav-link-scroll js-scroll-trigger"><img src="img/logos/Isotipo-landing-web-2.png" style="height: 35px;" id="myImage"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-scroll js-scroll-trigger" href="papeleria.html">Papelería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-scroll js-scroll-trigger" href="proyectos.html">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-scroll js-scroll-trigger" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container justify-content-center navbar-line" id="container-horizontalLine" style="margin-top: 0em !important">
+          <hr class="line-navbar" style="border-color: #D7D7D7;width: 250%;margin-left: -60%;margin-bottom: 0px;margin-top:0.6em !important;">
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ---------- HEADER ---------- -->
+
+  <!--<header class="masthead" id="SLIDE_BG">
+    <div id="preload" style="display:none">
+      <img src="img/header-bg-11.jpeg" />
+      <img src="img/header-bg-22.jpeg" />
+      <img src="img/header-bg-33.jpeg" />
+    </div>
+    <div class="container">
+      <div class="intro-text">
+        <img id="logo-landing" src="img/logos/Logo-Blanco.png" style="width:40%;">
+        <div class="row justify-content-center" style="bottom: 0;position: absolute;padding-bottom: 10vh;left: 0;right: 0;margin-left: auto;margin-right: auto;">
+          <a class="ct-btn-scroll ct-js-btn-scroll" onclick="changeBackground(1);"><img alt="Arrow Down Icon" src="img/arrow-left.png" style="width: 70%;cursor: pointer;"></a>
+          <a class="ct-btn-scroll ct-js-btn-scroll" onclick="changeBackground(0);"><img alt="Arrow Down Icon" src="img/arrow-right.png" style="width: 70%;cursor: pointer;"></a>
+        </div>
+      </div>
+    </div>
+  </header>-->
+
+  <!-- --------- BORDADOS ---------- -->
+
+  <section class="page-section" id="portfolio" style="padding-bottom:10px !important;padding-top:110px !important;">
+    <div class="container" style="text-align: center">
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="project-title" style="text-align: center;">Bordados</p>
+          <hr style="width: 30%;border-color: #dbafa9 !important">
+          <p class="project-subtitle">Bienvenido a mi sección favorita. Aquí encontrarás todos los bordados que hago.<br> Cada bordado cuenta una historia única y especial. ¡Gracias por dejarme formar parte de ella!<br><br>¡No te lo pierdas!</p>
+        </div>
+      </div>
+      <div class="row" style="margin-top:20px;">
+        <div class="col-sm" style="padding:20px;">
+          <img src="img/bordados/480x580_Porta-anillos.jpg" style="width: 100%">
+        </div>
+        <div class="col-sm" style="padding:20px;">
+          <img src="img/bordados/480x580_Percha-Novia.jpg" style="width: 100%">
+        </div>
+        <div class="col-sm" style="padding:20px;">
+          <img src="img/bordados/480x580_Bolsita-arras.jpg" style="width: 100%">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm" style="padding:20px;">
+          <img src="img/bordados/480x580_Virgen.jpg" style="width: 100%">
+        </div>
+        <div class="col-sm" style="padding:20px;">
+          <img src="img/bordados/480x580_Primavera.jpg" style="width: 100%">
+        </div>
+        <div class="col-sm" style="padding:20px;">
+          <img src="img/bordados/480x580_Bolsita-arras.jpg" style="width: 100%">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ---------- BLOG ---------- --> 
+
+  <!--<section class="page-section" id="blog">
+    <div class="container" style="max-width: 100%">
+      <div class="row" style="">
+        <div class="col-md-12" style="background-image: url('img/blog.jpg');background-size:cover;height: 40vh;text-align: center;padding:150px 0;">
+          <img id="logo-landing" src="img/blog-letra.png" style="width:20%; margin-bottom: 30vh;">
+        </div>
+      </div>
+      <div class="row">
+      </div>
+    </div>
+  </section>-->
+
+  <!-- ---------- INSTAGRAM ---------- -->
+
+  <section class="page-section" id="instagram" style="padding-top:0px !important;">
+    <div class="container">
+      <hr style="margin-top:50px;margin-bottom: 50px;margin-right:25px;width: 100%;border-color: #dbafa9 !important">
+      <div class="row text-center">
+        <div class="col-md-12" style="margin-bottom:20px;">
+          <p class="text-normal text-uppercase" style="color:rgb(187,117,107);text-align: center">Síguenos en Instagram</p>
+        </div>
+        <div class="col-md-12" style="max-width: 1000px; margin:auto; margin-bottom:20px;">
+          <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/4c973eced5625b7683011bed77fce918.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- FOOTER ---------- -->
+
+  <footer class="footer bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <!--<div class="col-md-4"></div>-->
+        <div class="col-md-12">
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="about.html" class="text-normal" style="font-size: 0.85em;color:#bb756b;text-align: center;">About D/D
+                <!--<i class="fas fa-paper-plane fa-2x" style="color: #bb756b !important;"></i>-->
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="contacto.html" class="text-normal" style="font-size: 0.85em;color:#bb756b;text-align: center;">Contacto
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/demihermana/" class="text-normal" style="font-size: 0.85em;color:#bb756b;text-align: center;" target="_blank">Instagram
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-normal" style="font-size: 0.85em;color:#bb756b;text-align: center;">Pinterest
+              </a>
+            </li>
+          </ul>
+        </div>
+    </div>
+    <div class="container">
+      <div class="col-md-12" style="margin-top:40px;margin-bottom:20px;">
+          <span class="text-normal" style="color: #bb756b !important;font-size: 0.9em">Copyright &copy; Demihermana Design <span id="year"></span></span>
+        </div>
+    </div>
+  </footer>
+
+</body>
+
+  <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -42,116 +215,5 @@
   <script>
     document.getElementById("year").innerHTML = new Date().getFullYear();
   </script>
-
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="img/favicon/site.webmanifest">
-  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-
-</head>
-
-<body>
-
-  <nav class="navbar navbar-expand-lg" id="mainNavFixed">
-    <div class="container justify-content-center">
-      <div class="row row-top">
-        <div class="container justify-content-center logo-display">
-          <img src="img/logos/Isotipo-landing-web-2.png" style="height: 60px;">
-        </div> 
-        
-        <div class="container justify-content-center" style="margin-top: 5px;">
-          <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
-            <ul class="navbar-nav text-uppercase" style="margin-top: 0px;">
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger nav-link-scroll" href="index.html" style="cursor: pointer;">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-scroll" href="about.html">About D/D</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-scroll" href="proyectos.html">Proyectos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-scroll" href="papeleria.html">Papelería</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-scroll" href="bordados.html">Bordados</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-scroll" href="contacto.html">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="container justify-content-center navbar-line">
-          <hr class="line-navbar nav-link-scroll" style="border-color: white">
-        </div>
-      </div>
-    </div>
-  </nav>
-
-
-
-  <section class="page-section" style="padding:2em;background-color: #f2efeb;">
-    <div class="container container-fluid p-0" style="text-align: center;">
-
-      <!-- INSTAGRAM -->
-      <hr class="nav-link-scroll" style="margin-top:50px;margin-bottom: 50px;width: 93%">
-      <div class="row text-center">
-        <div class="col-md-12" style="margin-bottom:20px;">
-          <p class="text-normal text-uppercase">Síguenos en Instragram</p>
-        </div>
-
-        <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-a3aae205-7432-4ca1-bc34-7292e624632b"></div> -->
-
-        <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="http://lightwidget.com/widgets/4c973eced5625b7683011bed77fce918.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
-      </div>
-      <!-- INSTAGRAM --> 
-      
-    </div>
-  </section>
-
-
-  <!-- Footer -->
-  <footer class="footer bg-light">
-    <div class="container">
-      <div class="row align-items-center">
-        <!--<div class="col-md-4"></div>-->
-        <div class="col-md-12">
-          <ul class="list-inline social-buttons">
-            <li class="list-inline-item">
-              <a href="about.html" class="text-normal" style="font-size: 0.75em">About D/D
-                <!--<i class="fas fa-paper-plane fa-2x" style="color: #bb756b !important;"></i>-->
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#" class="text-normal" style="font-size: 0.75em">Contacto
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#" class="text-normal" style="font-size: 0.75em">Instagram
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#" class="text-normal" style="font-size: 0.75em">Pinterest
-              </a>
-            </li>
-          </ul>
-        </div>
-    </div>
-    <div class="container">
-      <div class="col-md-12" style="margin-top:20px;margin-bottom:20px;">
-          <span class="copyright" style="color: #bb756b !important;">Copyright &copy; Demihermana Design <span id="year"></span></span>
-        </div>
-    </div>
-  </footer>
-
-</body>
-
-
 
 </html>
