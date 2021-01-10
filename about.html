@@ -3,15 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>About D/D</title>
-  <!-- Bootstrap core CSS -->
+  <title>About - D/D</title>
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom fonts for this template 
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant&family=Montserrat:wght@400;700&family=Nunito+Sans&family=Prompt&display=swap" rel="stylesheet">-->
-  <!-- Custom styles for this template -->
   <link href="css/agency.css" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -22,111 +18,139 @@
   <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
+<body id="page-top" style="width:100%;">
 
-  <nav class="navbar navbar-expand-lg navbar-shrink fixed-top" id="mainNavFixed">
-    <div class="container justify-content-center">
+  <!-- ---------- NAVBAR ---------- -->
+
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNavFixed" style="-webkit-transition:background-color 200ms linear;-ms-transition: background-color 200ms linear;transition: background-color 200ms linear;">
+    <div class="container justify-content-center" id="container-mainNav">
       <div class="row row-top" style="margin:0 !important;padding: 0 !important;">
-        <div class="container justify-content-center menu-hidden">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border-radius: 0px; margin-top: 30px;">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <div class="container justify-content-center menu-hidden" style="padding:0em;display: inline;">
+          <div class="row" style="padding: 0.5em;">
+            <div class="col-2">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="padding:0em !important;">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            </div>
+            <div class="col-8">
+              <img id="img-navhidden" src="img/logos/Logo-Rosa.png" style="margin-top:5px;width:100%;display:none;" href="index.html">
+            </div>
+            <div class="col-2">
+            </div>
+          </div>
         </div>
-
+        
         <div class="container justify-content-center">
           <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
-            <ul class="navbar-nav text-uppercase" style="margin-top: 0px;">
+            <ul class="navbar-nav text-uppercase" style="margin-top: 0px;margin-bottom: 0.5vh;">
               <li class="nav-item">
-                <a class="nav-link nav-link-scroll" href="index.html">Inicio</a>
+                <a class="nav-link nav-link-scroll js-scroll-trigger" href="index.html" style="cursor: pointer;">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-link-scroll" onclick="window.scrollTo({top:0,behavior:'smooth'});" style="cursor: pointer;">About D/D</a>
+                <a class="nav-link nav-link-scroll js-scroll-trigger" onclick="window.scrollTo({top:0,behavior:'smooth'});" style="cursor: pointer;">About D/D</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-link-scroll" href="proyectos.html">Proyectos</a>
+                <a class="nav-link nav-link-scroll js-scroll-trigger" href="bordados.html">Bordados</a>
               </li>
-              <li class="nav-item" >
-                <a href="index.html"><img src="img/logos/Isotipo-landing-web-2.png" style="height: 35px;margin-left: 30px;margin-right:20px;"></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-scroll" href="papeleria.html" style="margin-left:5px;">Papelería</a>
+              <li class="nav-item nav-item-show" style="cursor: pointer;">
+                <a class="nav-link nav-link-scroll js-scroll-trigger" href="index.html"><img src="img/logos/Isotipo-landing-web-2.png" style="height: 35px;" id="myImage"></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-link-scroll" href="bordados.html">Bordados</a>
+                <a class="nav-link nav-link-scroll js-scroll-trigger" href="papeleria.html">Papelería</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-link-scroll" href="contacto.html">Contacto</a>
+                <a class="nav-link nav-link-scroll js-scroll-trigger" href="proyectos.html">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-scroll js-scroll-trigger" href="contacto.html">Contacto</a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="container justify-content-center navbar-line">
-          <hr class="line-navbar nav-link-scroll" style="border-color: white">
+        <div class="container justify-content-center navbar-line" id="container-horizontalLine" style="margin-top: 0em !important">
+          <hr class="line-navbar" style="border-color: #D7D7D7;width: 250%;margin-left: -60%;margin-bottom: 0px;margin-top:0.6em !important;">
         </div>
       </div>
     </div>
   </nav>
 
-  <!-- Sections -->
-  <section class="page-section" id="portfolio" style="padding-bottom:60px;padding-top:6em;">
-    <div class="container" style="height: 490px;">
-      <div class="container py-4">
-        <div class="row h-100 align-items-center py-4" style="margin-top:30px">
-          <div class="col-lg-1"></div>
-          <div class="col-lg-5">
-            <h1 class="text-title" style="font-size:1.7em;letter-spacing: 4px;">About D/D</h1>
-            <p class="text-normal">Demihermana Design es la belleza de lo hecho a mano, es sensibilidad, creatividad, armonía, pasión y delicadeza.</p>
-            <p class="text-normal">Productos de calidad, hechos a mano, cuidando el más mínimo detalle.</p>
+
+  <!-- --------- ABOUT ---------- -->
+
+  <section class="page-section" id="portfolio" style="padding-bottom:10px !important;padding-top:110px !important;">
+    <div class="container" style="text-align: center">
+      <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5" style="align-self:center;padding-bottom:1em;">
+          <p class="project-title" style="text-align: center;">About D/D</p>
+          <hr style="width: 60%;border-color: #dbafa9 !important">
+          <p class="project-subtitle">Demihermana Design es la belleza de lo hecho a mano, es sensibilidad, creatividad, armonía, pasión y delicadeza.</p>
+          <p class="project-subtitle">Productos de calidad, hechos a mano, cuidando el más mínimo detalle.</p>
+        </div>
+        <!--<div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img src="img/about_carmen.jpeg" alt="" class="img-fluid mb-4 mb-lg-0 circle"></div>-->
+        <div class="col-lg-5"><img src="img/bordados/productos/Primavera_1.jpg" alt="" class="img-fluid" style="width: 350px;"></div>
+        <div class="col-lg-1"></div>
+      </div>
+      <div class="row" style="padding-top:4em;">
+        <div class="col-lg-1"></div>
+        <!--<div class="col-lg-5 px-5 mx-auto" style="text-align: center;"><img src="img/carmen.jpg" alt="" class="img-fluid mb-4 mb-lg-0 circle" width="80%"></div>-->
+        <div class="col-lg-5" style="align-self:center;"><img src="img/carmen.jpg" alt="" class="img-fluid" style="width: 350px;"></div>
+        <div class="col-lg-5">
+          <p class="project-title" style="text-align: center;padding-top:1em;">Sobre mí</p>
+          <hr style="width: 60%;border-color: #dbafa9 !important">
+          <p class="project-subtitle">Aquí podrás encontrar una pequeña parte de mí, un diario de trabajo, proyectos personales y reales.</p>
+          <p class="project-subtitle">Si quieres conocer algo más sobre mí, hacerme alguna consulta o compartir algo conmigo, contarme tu historia o simplemente charlar, puedes mandarme un correo.</p>
+          <p class="project-subtitle">Te invito a conocer mejor Demihermana Design en el perfil de Instagram. ¡Te estaré esperando!</p>
+          <div class="container" style="margin-top:2.5em;padding:0em !important;">
+              <a href="contacto.html">
+              <button id="sendMessageButton" class="button-normal btn btn-primary text-uppercase" type="submit" style="border-radius: 0 !important;font-size: 80% !important;letter-spacing: 0.15em;width:100%">Contactar</button>
+              </a>
           </div>
-          <div class="col-lg-6 px-5 mx-auto order-1 order-lg-2"><img src="img/about_carmen.jpeg" alt="" class="img-fluid mb-4 mb-lg-0 circle"></div>
+
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+  </section>
+
+  <!-- ---------- INSTAGRAM ---------- -->
+
+  <section class="page-section" id="instagram" style="padding-top:0px !important;">
+    <div class="container">
+      <hr style="margin-top:50px;margin-bottom: 50px;margin-right:25px;width: 100%;border-color: #dbafa9 !important">
+      <div class="row text-center">
+        <div class="col-md-12" style="margin-bottom:20px;">
+          <p class="text-normal text-uppercase" style="color:rgb(187,117,107);text-align: center">Sígueme en Instagram</p>
+        </div>
+        <div class="col-md-12" style="max-width: 1000px; margin:auto; margin-bottom:20px;">
+          <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/4c973eced5625b7683011bed77fce918.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
         </div>
       </div>
     </div>
-    <div class="container" style="background-color: white;">
-      <div class="container py-4">
-        <div class="row h-100 align-items-center py-4">
-          <div class="col-lg-6 px-5 mx-auto" style="text-align: center;"><img src="img/carmen.jpg" alt="" class="img-fluid mb-4 mb-lg-0 circle" width="80%"></div>
-          <div class="col-lg-5">
-            <h1 class="text-title" style="font-size:1.7em;letter-spacing: 4px;">Sobre Carmen</h1>
-            <p class="text-normal">Aquí podrás encontrar una pequeña parte de mí,  un diario de trabajo, proyectos personales y reales.</p>
-            <p class="text-normal">Si quieres conocer algo más sobre mí, hacerme alguna consulta o compartir algo conmigo, contarme tu historia o simplemente charlar, <a href="contacto.html">puedes mandarme un correo</a>.</p>
-            <p class="text-normal">Te invito a conocer mejor Demihermana Design en el perfil de <a href="https://www.instagram.com/demihermana/" target="_blank">Instagram</a>. ¡Te estaré esperando!</p>
-          </div>
-          <div class="col-lg-1"></div>
-        </div>
-      </div>
-      <hr style="margin-top:50px;margin-bottom: 50px;margin-right:25px;width: 93%;border-color: #dbafa9 !important">
-      <div class="row text-center">
-        <div class="col-md-12" style="margin-bottom:20px;">
-          <p class="text-normal text-uppercase" style="color:rgb(187,117,107);text-align: center">Síguenos en Instagram</p>
-        </div>
-        <div class="col-md-12">
-        <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/4c973eced5625b7683011bed77fce918.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:90%;border:0;overflow:hidden;"></iframe>
-        </div>
-      </div>
-    </div>    
   </section>
 
-  <!-- Footer -->
+  <!-- ---------- FOOTER ---------- -->
+
   <footer class="footer bg-light">
     <div class="container">
       <div class="row align-items-center">
+        <!--<div class="col-md-4"></div>-->
         <div class="col-md-12">
           <ul class="list-inline social-buttons">
             <li class="list-inline-item">
-              <a onclick="window.scrollTo({top:0,behavior:'smooth'});" class="text-normal" style="font-size: 0.85em;color:#bb756b; cursor: pointer; ">About D/D
+              <a href="about.html" class="text-normal" style="font-size: 0.85em;color:#bb756b;text-align: center;">About D/D
+                <!--<i class="fas fa-paper-plane fa-2x" style="color: #bb756b !important;"></i>-->
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="contacto.html" class="text-normal" style="font-size: 0.85em;color:#bb756b">Contacto
+              <a href="contacto.html" class="text-normal" style="font-size: 0.85em;color:#bb756b;text-align: center;">Contacto
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://www.instagram.com/demihermana/" class="text-normal" style="font-size: 0.85em;color:#bb756b" target="_blank">Instagram
+              <a href="https://www.instagram.com/demihermana/" class="text-normal" style="font-size: 0.85em;color:#bb756b;text-align: center;" target="_blank">Instagram
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="#" class="text-normal" style="font-size: 0.85em;color:#bb756b">Pinterest
+              <a href="#" class="text-normal" style="font-size: 0.85em;color:#bb756b;text-align: center;">Pinterest
               </a>
             </li>
           </ul>
@@ -134,11 +158,10 @@
     </div>
     <div class="container">
       <div class="col-md-12" style="margin-top:40px;margin-bottom:20px;">
-          <span class="copyright" style="color: #bb756b !important;font-size: 0.8em">Copyright &copy; Demihermana Design <span id="year"></span></span>
+          <span class="text-normal" style="color: #bb756b !important;font-size: 0.9em">Copyright &copy; Demihermana Design <span id="year"></span></span>
         </div>
     </div>
   </footer>
-
 
 </body>
 
