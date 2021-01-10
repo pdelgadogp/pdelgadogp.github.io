@@ -280,7 +280,7 @@ img::-moz-selection {
   padding: 0em;
 }
 
-#mainNav .navbar-toggler {
+#mainNav .navbar-toggler, #mainNavFixed .navbar-toggler {
   /*font-size: 12px;*/
   right: 0;
   padding: 0px;
