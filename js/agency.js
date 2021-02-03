@@ -16,7 +16,7 @@
   // Collapse Navbar
   var navbarCollapse = function() {
     if (document.body.offsetWidth > 992) {
-      if ($("#mainNav").offset().top > 50)  {
+      if ($("#mainNav").offset().top > 0)  {
         $("#mainNav").addClass("navbar-shrink");
         $(".logo-hidden").addClass("logo-display");
         $(".nav-link").addClass("nav-link-scroll");
@@ -31,7 +31,7 @@
         $(".line-navbar").removeClass("nav-link-scroll");
         $(".nav-item-hide").removeClass("nav-item-show");
         //document.getElementById('myImage').src='img/logos/Isotipo-landing-web-2blanco.png'
-        document.getElementById('myImage').src='img/logos/Logo-Blanco-pequeño.png'
+        document.getElementById('myImage').src='img/logos/Logo-Blanco-pequeñorosa.png'
       }
     } else {
       $(".nav-item-show").addClass("nav-item-hide");
