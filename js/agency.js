@@ -23,7 +23,7 @@
         $(".line-navbar").addClass("nav-link-scroll");
         $(".nav-item-hide").addClass("nav-item-show");
         //document.getElementById('myImage').src='img/logos/Isotipo-landing-web-2.png'
-        document.getElementById('myImage').src='img/logos/Logo-Blanco-pequeñorosa.png'
+        //document.getElementById('myImage').src='img/logos/Logo-Blanco-pequeñorosa.png'
       } else {
         $("#mainNav").removeClass("navbar-shrink");
         $(".logo-hidden").removeClass("logo-display");
@@ -31,7 +31,7 @@
         $(".line-navbar").removeClass("nav-link-scroll");
         $(".nav-item-hide").removeClass("nav-item-show");
         //document.getElementById('myImage').src='img/logos/Isotipo-landing-web-2blanco.png'
-        document.getElementById('myImage').src='img/logos/Logo-Blanco-pequeñorosa.png'
+        //document.getElementById('myImage').src='img/logos/Logo-Blanco-pequeñorosa.png'
       }
     } else {
       $(".nav-item-show").addClass("nav-item-hide");

@@ -46,7 +46,7 @@ body > div { -webkit-overflow-scrolling: touch;}
 
 #SLIDE_BG {
   position: relative;
-  background-image: url('../img/index/bg.jpg');
+  background-image: url('../img/index/bg_3.jpg');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -302,7 +302,7 @@ img::-moz-selection {
   padding: 1em 0;
   letter-spacing: 1px;
   color: #bb756b !important;
-  width: 150px !important;
+  width: 140px !important;
   text-align: center;
   align-items: center;
   top: 50%;
