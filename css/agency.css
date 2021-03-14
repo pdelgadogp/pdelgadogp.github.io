@@ -1,9 +1,3 @@
-/*!
- * Start Bootstrap - Agency v5.2.2 (https://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
- */
-
 @font-face {
     font-family: 'Cormorant';
     src: url('assets/fonts/cormorant-regular-webfont.woff2') format('woff2'),
@@ -30,17 +24,6 @@
     font-style: normal;
 
 }
-
-/*input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: blue;
-}*/
-
-/*.menu-hidden{
-  text-align: center;
-}*/
 
 body > div { -webkit-overflow-scrolling: touch;}
 
@@ -222,7 +205,7 @@ h6 {
 }
 
 section {
-  padding-top: 30px;
+  padding-top: 120px;
   padding-bottom: 30px;
 }
 
@@ -248,7 +231,7 @@ img::-moz-selection {
 }
 
 .btn {
-  font-family: sans-serif -apple-system !important;/*, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';*/
+  font-family: sans-serif -apple-system !important;
   font-weight: 700;
 }
 
@@ -278,6 +261,7 @@ img::-moz-selection {
 #mainNav{
   background-color: #f2efeb;
   padding: 0em;
+  border-bottom: .1px solid #efe0de;
 }
 
 #mainNav .navbar-toggler, #mainNavFixed .navbar-toggler {
@@ -299,10 +283,9 @@ img::-moz-selection {
 #mainNav .navbar-nav .nav-item .nav-link, #mainNavFixed .navbar-nav .nav-item .nav-link {
   font-size: 85%;
   font-weight: 400;
-  padding: 1em 0;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   color: #bb756b !important;
-  width: 140px !important;
+  /*width: 140px !important;*/
   text-align: center;
   align-items: center;
   top: 50%;
@@ -321,6 +304,8 @@ img::-moz-selection {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 0.5em !important;
+  padding-right: 0.5em !important;
 }
 
 @media (min-width: 1400px) {
@@ -330,14 +315,6 @@ img::-moz-selection {
 }
 
 @media (min-width: 992px) {
-  #mainNav {
-    /*padding-top: 35px;
-    padding-bottom: 25px;
-    padding-top: 1em;*/
-    transition: padding-top 0.3s, padding-bottom 0.3s;
-    border: none;
-    background-color: transparent;
-  }
   #container-mainNav {
     padding-top: 0em;
   }
@@ -349,18 +326,28 @@ img::-moz-selection {
     padding: 0.5em 1em !important;
   }
   #mainNav.navbar-shrink {
-    background-color: #f2efeb;
+    transition: top ease 0.5s !important;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
     padding: 12px 0;
   }
+  #img-navhidden{
+    display:none !important;
+  }
+  #img-fullwidth{
+    display:inline !important;
+  }
+  #portfolio {
+    padding-bottom:10px !important;
+    padding-top:170px !important;
+  }
+  #hoja_socbut{
+    
+  }
 }
 
 @media (max-width: 992px) {
-  #mainNav .navbar-nav .nav-item .nav-link, #mainNavFixed .navbar-nav .nav-item .nav-link{
-    color: #bb756b;
-  }
   #container-mainNav {
     justify-content: left !important;
     padding: 0.5em;
@@ -374,14 +361,20 @@ img::-moz-selection {
   #img-navhidden{
     display:inline !important;
   }
+  #img-fullwidth{
+    display:none !important;
+  }
   #logo-landing{
     width:80% !important;
   }
-}
-
-#mainNavFixed{
-  background-color: #f2efeb;
-  padding: 0em;
+  #portfolio {
+    padding-bottom:10px !important;
+    padding-top:120px !important;
+  }
+  #hoja_socbut{
+    width: 100%;
+    padding-top:1em;
+  }
 }
 
 header.masthead {
@@ -451,7 +444,7 @@ ul.social-buttons li a {
   font-size: 20px;
   line-height: 50px;
   display: block;
-  width: 100px;
+  width: 90px;
   height: 50px;
   transition: all 0.3s;
   color: white;
@@ -480,10 +473,6 @@ ul.social-buttons li a {
 }
 
 .card:hover {
-  /*transition: all 0.2s ease-in-out;
-  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
-  top: -4px;
-  border: 1px solid #cccccc;*/
   background: rgba(237, 226, 221, .5);
 }
 
@@ -504,10 +493,6 @@ ul.social-buttons li a {
 * {
   box-sizing: border-box;
 }
-
-/*.row {
-  margin: 8px -16px;
-}*/
 
 /* Create four equal columns that floats next to each other */
 .column {

@@ -16,15 +16,46 @@
   <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#2b5797">
   <meta name="theme-color" content="#ffffff">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-573Q7WQQZP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'analytics_storage': 'denied'
+    });
+    gtag('js', new Date());
+    gtag('set', 'allow_google_signals', false);
+    gtag('config', 'G-573Q7WQQZP', { 'anonymize_ip': true });
+  </script>
 </head>
 
 <body id="page-top" style="width:100%;">
 
+  <!-- cookie warning -->
+  <div class="fixed-bottom">
+      <div class="toast bg-dark text-white w-100 mw-100 fade hide" role="alert" data-autohide="false" style="border:0em !important;border-radius: 0em !important;text-align: center;background-color: #d2b6b1 !important;opacity: 0.8">
+          <div class="toast-body d-flex flex-column" style="max-width: 1500px !important;margin:auto">
+            <div class="row">
+              <div class="col-xl-11">
+                <p style="margin-bottom:0;padding:.75em;">Utilizamos cookies propias y de terceros para mejorar tu experiencia y analizar el tráfico de la misma. Puedes comprobar nuestra política de cookies <a href="politica-de-cookies">aquí</a>. Puedes leer en nuestra "Política de Privacidad" cómo tratamos tus datos y cómo ejercer tus derechos <a href="politica-de-privacidad">aquí</a>. Pulse "OK" para aceptar el uso de todas ellas. 
+              </div>
+              <div class="col-xl-1">
+                <div class="ml-auto" style="padding:.75em;">
+                  <button id="btnAccept" class="button-normal btn btn-primary text-uppercase" type="button" style="border-radius: 0 !important;font-size: 90% !important;padding: 1em 2em 1em 2em;background-color: #bb756b !important">OK</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
   <!-- ---------- NAVBAR ---------- -->
 
-  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" style="-webkit-transition:background-color 200ms linear;-ms-transition: background-color 200ms linear;transition: background-color 200ms linear;background-color: #f2efeb;box-shadow: 0 5px 10px -4px rgb(0 0 0 / 20%);">
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" style="display: inline;position: absolute;z-index: 1;width: 100%;">
     <div class="container justify-content-center" id="container-mainNav">
-      <div class="row row-top" style="margin:0 !important;padding: 0 !important;">
+      <div class="row row-top" style="margin:0 !important;padding: 0 !important;width: 100%">
         <div class="container justify-content-center menu-hidden" style="padding:0em;display: inline;">
           <div class="row" style="padding: 0.15em;">
             <div class="col-2">
@@ -32,8 +63,8 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             </div>
-            <div class="col-8">
-              <img id="img-navhidden" src="img/logos/Logo Rosa.png" style="width:100%;display:none;" onclick="window.scrollTo({top:0,behavior:'smooth'});">
+            <div class="col-8" style="text-align: center;">
+              <a class="nav-link js-scroll-trigger" href="/" style="padding:0em !important"><img id="img-navhidden" src="img/logos/Logo Rosa.png" style="width:100%;display:none;max-width: 250px;"></a>
             </div>
             <div class="col-2">
             </div>
@@ -42,9 +73,9 @@
         <div class="container justify-content-center">
           <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase" style="margin-top: 0px">
-              <hr class="w-100" style="border-color: #D7D7D7;">
-              <li class="nav-item nav-item-show" style="cursor: pointer;">
-                <a class="nav-link js-scroll-trigger" style="padding-bottom:1.1em !important;width:175px !important;" href="/"><img src="img/logos/Logo Rosa.png" style="width:100%;" id="myImage"></a>
+              <hr class="w-100" style="border-color: #D7D7D7; margin-bottom: 0.25em;">
+              <li class="nav-item nav-item-show" style="cursor: pointer;" id="img-fullwidth">
+                <a class="nav-link js-scroll-trigger" style="padding-bottom:1.4em !important;padding-top:0.9em !important;width:225px !important;" href="/"><img src="img/logos/Logo Rosa.png" style="width:100%;" id="myImage"></a>
               </li>
               <hr class="w-100" style="border-color: transparent;margin:0.3em;">
             </ul>
@@ -53,22 +84,16 @@
         <div class="container justify-content-center">
           <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase" style="margin-top: 0px">
-              <hr class="w-100" style="border-color: #D7D7D7;">
+              <!--<hr class="w-100" style="border-color: #D7D7D7;">-->
               <li class="nav-item" style="margin-left:0px;">
                 <a class="nav-link nav-link-scroll js-scroll-trigger" href="/">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="about">About</a>
+                <a class="nav-link js-scroll-trigger" href="about" style="cursor: pointer;">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" onclick="window.scrollTo({top:0,behavior:'smooth'});" style="cursor: pointer;">Bordados</a>
               </li>
-              <!--<li class="nav-item nav-item-show" onclick="window.scrollTo({top:0,behavior:'smooth'});" style="cursor: pointer;">
-                <a class="nav-link js-scroll-trigger" style="padding-bottom:0.25em !important;"><img src="img/logos/Logo-Blanco-pequeñorosa.png" style="height: 50px;" id="myImage"></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="papeleria">Papelería</a>
-              </li>-->
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="proyectos">Proyectos</a>
               </li>
@@ -84,12 +109,15 @@
         </div>
       </div>
     </div>
+    <div class="container justify-content-center" id="container-announcement" style="padding-top:0.5em;padding-left:0em !important;padding-right:0em !important;max-width: 3000px !important;transition: all ease 0.5s;-webkit-transition: .5s;">
+      <p class="project-subtitle" style="background-color:#d1a69e;width: 100%;color:white;font-size: 0.85em;margin-bottom:0em !important;padding:0.65em;word-spacing: 1px;">Todos los bordados se crean bajo pedido</p>
+    </div>
   </nav>
 
 
   <!-- --------- BORDADOS ---------- -->
 
-  <section class="page-section" id="portfolio" style="padding-bottom:10px !important;padding-top:110px !important;">
+  <section class="page-section" id="portfolio">
     <div class="container" style="text-align: center">
       <div class="row">
         <div class="col-lg-12">
@@ -181,8 +209,11 @@
       <div class="row align-items-center">
         <!--<div class="col-md-4"></div>-->
         <div class="col-md-12">
+          <img src="img/logos/Logo-Blanco-pequeñorosa.png" style="width: 150px;padding-top:2em;padding-bottom:1em;">
+        </div>
+        <div class="col-md-12">
           <ul class="list-inline social-buttons">
-            <li class="list-inline-item">
+            <li class="list-inline-item" id="hoja_socbut">
               <img src="img/hojas1.png" style="max-width: 60px;">
             </li>
             <li class="list-inline-item">
@@ -203,6 +234,10 @@
               </a>
             </li>
             <li class="list-inline-item">
+              <a href="https://open.spotify.com/user/v3z9wt6wvsrx1tqvvc3gk2vqb?si=20d3407ee5df43c6" class="text-normal" style="font-size: 0.85em;color:#bb756b;text-align: center;" target="_blank">Spotify
+              </a>
+            </li>
+            <li class="list-inline-item" id="hoja_socbut">
               <img src="img/hojas2.png" style="max-width: 60px;">
             </li>
           </ul>
@@ -210,12 +245,13 @@
     </div>
     <div class="container">
       <hr style="margin-top:2em;width: 80%;margin-bottom:30px;">
-      <!--<div class="col-md-12" style="margin-top:30px;margin-bottom:20px;">
-        <span class="text-normal" style="color: #bb756b !important;font-size: 0.8em"><a href="aviso-legal" style="color: #bb756b !important;">Aviso legal</a></span><br>
-        <span class="text-normal" style="color: #bb756b !important;font-size: 0.8em"><a href="politica-de-privacidad" style="color: #bb756b !important;">Política de privacidad</a></span>
-      </div>-->
+      <div class="col-md-12" style="margin-top:30px;margin-bottom:40px;">
+        <span class="text-normal" style="color: #bb756b !important;font-size: 0.8em"><a href="" style="color: #bb756b !important;">Aviso legal</a></span>
+        <span class="text-normal" style="color: #bb756b !important;font-size: 0.8em"><a href="" style="color: #bb756b !important;">Política de cookies</a></span>
+        <span class="text-normal" style="color: #bb756b !important;font-size: 0.8em"><a href="" style="color: #bb756b !important;">Política de privacidad</a></span>
+      </div>
       <div style="margin-bottom:20px;">
-        <span class="text-normal" style="color: #bb756b !important;font-size: 0.8em">Copyright &copy; Demihermana  <span id="year"></span></span>
+        <span class="text-normal" style="color: #bb756b !important;font-size: 0.8em">&copy; Demihermana</span>
       </div>
     </div>
   </footer>

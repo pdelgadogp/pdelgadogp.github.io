@@ -16,25 +16,42 @@
   // Collapse Navbar
   var navbarCollapse = function() {
     if (document.body.offsetWidth > 992) {
-      if ($("#mainNav").offset().top > 0)  {
+      if (document.documentElement.scrollTop > 110)  {
+        document.getElementById("mainNav").style.top = "-100px";
+      }
+      if (document.documentElement.scrollTop < 100)  {
+        document.getElementById("mainNav").style.top = "0px";
+      }
+      if (document.documentElement.scrollTop > 180)  {
         $("#mainNav").addClass("navbar-shrink");
+        $("#mainNav").addClass("fixed-top");
+        document.getElementById("mainNav").style.position = "";
+        document.getElementById("container-announcement").style.display = "none";
+        document.getElementById("mainNav").style.top = "0px";
         $(".logo-hidden").addClass("logo-display");
         $(".nav-link").addClass("nav-link-scroll");
         $(".line-navbar").addClass("nav-link-scroll");
         $(".nav-item-hide").addClass("nav-item-show");
-        //document.getElementById('myImage').src='img/logos/Isotipo-landing-web-2.png'
-        //document.getElementById('myImage').src='img/logos/Logo-Blanco-pequeñorosa.png'
       } else {
         $("#mainNav").removeClass("navbar-shrink");
+        $("#mainNav").removeClass("fixed-top");
+        document.getElementById("mainNav").style.position = "absolute";
+        document.getElementById("container-announcement").style.display = "inline";
         $(".logo-hidden").removeClass("logo-display");
         $(".nav-link").removeClass("nav-link-scroll");
         $(".line-navbar").removeClass("nav-link-scroll");
         $(".nav-item-hide").removeClass("nav-item-show");
-        //document.getElementById('myImage').src='img/logos/Isotipo-landing-web-2blanco.png'
-        //document.getElementById('myImage').src='img/logos/Logo-Blanco-pequeñorosa.png'
       }
     } else {
       $(".nav-item-show").addClass("nav-item-hide");
+      $("#mainNav").addClass("fixed-top");
+      document.getElementById("mainNav").style.position = "";
+      if (document.documentElement.scrollTop > 180)  {
+        document.getElementById("container-announcement").style.display = "none";
+      } else {
+        document.getElementById("container-announcement").style.display = "inline";
+      }
+
     }
   };
   // Collapse now if page is not at top
@@ -45,37 +62,51 @@
 })(jQuery); // End of use strict
 
 
-/*var changeBackground = function(opt) {
-  var img = document.getElementById('SLIDE_BG');
-  var style = img.currentStyle || window.getComputedStyle(img, false);
-  var bi = style.backgroundImage.slice(4, -1).replace(/"/g, "");
-  if (opt == 1) {
-    if (bi.includes('header-bg-11.jpeg')) {
-      document.getElementById('SLIDE_BG').style.backgroundImage="url(img/index/header-bg-44.jpeg)";
-    } else if (bi.includes('header-bg-22.jpeg')) {
-      document.getElementById('SLIDE_BG').style.backgroundImage="url(img/index/header-bg-11.jpeg)";
-    } else if (bi.includes('header-bg-33.jpeg')) {
-      document.getElementById('SLIDE_BG').style.backgroundImage="url(img/index/header-bg-22.jpeg)";
-    } else if (bi.includes('header-bg-44.jpeg')) {
-      document.getElementById('SLIDE_BG').style.backgroundImage="url(img/index/header-bg-33.jpeg)";
-    }
 
-  } else {
-    if (bi.includes('header-bg-11.jpeg')) {
-      document.getElementById('SLIDE_BG').style.backgroundImage="url(img/index/header-bg-22.jpeg)";
-    } else if (bi.includes('header-bg-22.jpeg')) {
-      document.getElementById('SLIDE_BG').style.backgroundImage="url(img/index/header-bg-33.jpeg)";
-    } else if (bi.includes('header-bg-33.jpeg')) {
-      document.getElementById('SLIDE_BG').style.backgroundImage="url(img/index/header-bg-44.jpeg)";
-    } else if (bi.includes('header-bg-44.jpeg')) {
-      document.getElementById('SLIDE_BG').style.backgroundImage="url(img/index/header-bg-11.jpeg)";
+// COOKIE ALERT
+
+function setCookie(name,value,days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days*24*60*60*1000));
+        expires = "; expires=" + date.toUTCString();
     }
+    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+}
+function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
+
+function eraseCookie(name) {   
+    document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+}
+
+function cookieConsent() {
+  if (!getCookie('allowCookies')) {
+    $('.toast').toast('show');
   }
-};
+}
 
-// Will execute myCallback every 0.5 seconds 
-var intervalID = window.setInterval(changeBackground, 10000);*/
+$('#btnDeny').click(()=>{
+    eraseCookie('allowCookies')
+    $('.toast').toast('hide')
+})
 
-/*function myCallback() {
- // Your code here
-}*/
+$('#btnAccept').click(()=>{
+    setCookie('allowCookies','1',7)
+    $('.toast').toast('hide')
+})
+
+// load
+cookieConsent()
+
+
+

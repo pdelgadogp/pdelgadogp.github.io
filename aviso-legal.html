@@ -2,11 +2,11 @@
 <html lang="es">
 
 <head>
+  <title>Aviso legal</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Aviso Legal</title>
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/agency.css" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -16,15 +16,46 @@
   <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#2b5797">
   <meta name="theme-color" content="#ffffff">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-573Q7WQQZP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'analytics_storage': 'denied'
+    });
+    gtag('js', new Date());
+    gtag('set', 'allow_google_signals', false);
+    gtag('config', 'G-573Q7WQQZP', { 'anonymize_ip': true });
+  </script>
 </head>
 
 <body id="page-top" style="width:100%;">
 
+  <!-- cookie warning -->
+  <div class="fixed-bottom">
+      <div class="toast bg-dark text-white w-100 mw-100 fade hide" role="alert" data-autohide="false" style="border:0em !important;border-radius: 0em !important;text-align: center;background-color: #d2b6b1 !important;opacity: 0.8">
+          <div class="toast-body d-flex flex-column" style="max-width: 1500px !important;margin:auto">
+            <div class="row">
+              <div class="col-xl-11">
+                <p style="margin-bottom:0;padding:.75em;">Utilizamos cookies propias y de terceros para mejorar tu experiencia y analizar el tráfico de la misma. Puedes comprobar nuestra política de cookies <a href="politica-de-cookies">aquí</a>. Puedes leer en nuestra "Política de Privacidad" cómo tratamos tus datos y cómo ejercer tus derechos <a href="politica-de-privacidad">aquí</a>. Pulse "OK" para aceptar el uso de todas ellas. 
+              </div>
+              <div class="col-xl-1">
+                <div class="ml-auto" style="padding:.75em;">
+                  <button id="btnAccept" class="button-normal btn btn-primary text-uppercase" type="button" style="border-radius: 0 !important;font-size: 90% !important;padding: 1em 2em 1em 2em;background-color: #bb756b !important">OK</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
   <!-- ---------- NAVBAR ---------- -->
 
-  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" style="-webkit-transition:background-color 200ms linear;-ms-transition: background-color 200ms linear;transition: background-color 200ms linear;background-color: #f2efeb;box-shadow: 0 5px 10px -4px rgb(0 0 0 / 20%);">
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" style="display: inline;position: absolute;z-index: 1;width: 100%;">
     <div class="container justify-content-center" id="container-mainNav">
-      <div class="row row-top" style="margin:0 !important;padding: 0 !important;">
+      <div class="row row-top" style="margin:0 !important;padding: 0 !important;width: 100%">
         <div class="container justify-content-center menu-hidden" style="padding:0em;display: inline;">
           <div class="row" style="padding: 0.15em;">
             <div class="col-2">
@@ -32,8 +63,8 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             </div>
-            <div class="col-8">
-              <img id="img-navhidden" src="img/logos/Logo Rosa.png" style="width:100%;display:none;" onclick="window.scrollTo({top:0,behavior:'smooth'});">
+            <div class="col-8" style="text-align: center;">
+              <a class="nav-link js-scroll-trigger" href="/" style="padding:0em !important"><img id="img-navhidden" src="img/logos/Logo Rosa.png" style="width:100%;display:none;max-width: 250px;"></a>
             </div>
             <div class="col-2">
             </div>
@@ -42,9 +73,9 @@
         <div class="container justify-content-center">
           <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase" style="margin-top: 0px">
-              <hr class="w-100" style="border-color: #D7D7D7;">
-              <li class="nav-item nav-item-show" style="cursor: pointer;">
-                <a class="nav-link js-scroll-trigger" style="padding-bottom:1.1em !important;width:175px !important;" href="/"><img src="img/logos/Logo Rosa.png" style="width:100%;" id="myImage"></a>
+              <hr class="w-100" style="border-color: #D7D7D7; margin-bottom: 0.25em;">
+              <li class="nav-item nav-item-show" id="img-fullwidth">
+                <a class="nav-link js-scroll-trigger" style="padding-bottom:1.4em !important;padding-top:0.9em !important;width:225px !important;" href="/"><img src="img/logos/Logo Rosa.png" style="width:100%;"></a>
               </li>
               <hr class="w-100" style="border-color: transparent;margin:0.3em;">
             </ul>
@@ -53,22 +84,15 @@
         <div class="container justify-content-center">
           <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase" style="margin-top: 0px">
-              <hr class="w-100" style="border-color: #D7D7D7;">
               <li class="nav-item" style="margin-left:0px;">
                 <a class="nav-link nav-link-scroll js-scroll-trigger" href="/">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" onclick="window.scrollTo({top:0,behavior:'smooth'});" style="cursor: pointer;">About</a>
+                <a class="nav-link js-scroll-trigger" href="about">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="bordados">Bordados</a>
               </li>
-              <!--<li class="nav-item nav-item-show" onclick="window.scrollTo({top:0,behavior:'smooth'});" style="cursor: pointer;">
-                <a class="nav-link js-scroll-trigger" style="padding-bottom:0.25em !important;"><img src="img/logos/Logo-Blanco-pequeñorosa.png" style="height: 50px;" id="myImage"></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="papeleria">Papelería</a>
-              </li>-->
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="proyectos">Proyectos</a>
               </li>
@@ -84,75 +108,75 @@
         </div>
       </div>
     </div>
+    <div class="container justify-content-center" id="container-announcement" style="padding-top:0.5em;padding-left:0em !important;padding-right:0em !important;max-width: 3000px !important;transition: all ease 0.5s;-webkit-transition: .5s;">
+      <p class="project-subtitle" style="background-color:#d1a69e;width: 100%;color:white;font-size: 0.85em;margin-bottom:0em !important;padding:0.65em;word-spacing: 1px;">Todos los bordados se crean bajo pedido</p>
+    </div>
   </nav>
 
 
   <!-- --------- AVISO LEGAL ---------- -->
 
-  <section class="page-section" id="portfolio" style="padding-bottom:10px !important;padding-top:110px !important;">
+  <section class="page-section" id="portfolio">
     <div class="container" style="text-align: center">
       <div class="row">
         <div class="col-lg-2"></div>
         <div class="col-lg-8" style="align-self:center;padding-bottom:1em;">
           <p class="project-title" style="text-align: center;">Aviso Legal</p>
           <hr style="width: 60%;border-color: #dbafa9 !important">
-          <p class="project-subtitle"><p>En cumplimiento con el deber de informaci&oacute;n recogido en art&iacute;culo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Informaci&oacute;n y del Comercio Electr&oacute;nico, a continuaci&oacute;n se hace constar:</p>
-<p>1. DATOS IDENTIFICATIVOS: El titular del/los dominio/s web es Adriana Bernardo Navarro, con domicilio en Felix Pizcueta, 18 46004 Valencia, Valencia y con N.I.F.: 21001703N. Correo electr&oacute;nico de contacto: info@loscaprichosdemihermana.com<br />2. USUARIOS: El acceso y/o uso de este sitio web de loscaprichosdemihermana.com atribuye la condici&oacute;n de USUARIO, que acepta, desde dicho acceso y/o uso, los presentes t&eacute;rminos de uso.<br />3. USO DEL SITIO WEB: loscaprichosdemihermana.com proporciona el acceso a art&iacute;culos, informaciones y datos (en adelante, &ldquo;los contenidos&rdquo;) propiedad de loscaprichosdemihermana.com. El USUARIO asume la responsabilidad del uso de la web.<br />La presente informaci&oacute;n conforma y regula las condiciones de uso, las limitaciones de responsabilidad y las obligaciones que, los USUARIOS de la p&aacute;gina Web que se publica bajo el nombre de dominio Felix Pizcueta, 18 46004 Valencia, asumen y se comprometen a respetar.</p>
-<p>CONDICIONES DE USO<br />La simple y mera utilizaci&oacute;n de la P&aacute;gina otorga la condici&oacute;n de USUARIO de la P&aacute;gina, bien sea persona f&iacute;sica o jur&iacute;dica, y obligatoriamente implica la aceptaci&oacute;n completa, plena y sin reservas de todas y cada una de las cl&aacute;usulas y condiciones generales incluidas en el Aviso Legal. Si el USUARIO no estuviera conforme con las cl&aacute;usulas y condiciones de uso de este Aviso Legal, se abstendr&aacute; de utilizar la P&aacute;gina. Este Aviso Legal est&aacute; sujeto a cambios y actualizaciones por lo que la versi&oacute;n publicada por Adriana Bernardo Navarro, puede ser diferente en cada momento en que el USUARIO acceda al Portal. Por tanto, el USUARIO debe leer el Aviso Legal en todas y cada una de las ocasiones en que acceda a la P&aacute;gina.</p>
-<p>A trav&eacute;s de la P&aacute;gina, Adriana Bernardo Navarro facilita a los USUARIOS el acceso y la utilizaci&oacute;n de diversos contenidos publicados por medio de Internet por Adriana Bernardo Navarro o por terceros autorizados.</p>
-<p>El USUARIO esta obligado y se compromete a utilizar la P&aacute;gina y los Contenidos de conformidad con la legislaci&oacute;n vigente, el Aviso Legal, y cualquier otro aviso o instrucciones puestos en su conocimiento, bien sea por medio de este aviso legal o en cualquier otro lugar dentro de los Contenidos que conforman la P&aacute;gina, as&iacute; como con las normas de convivencia, la moral y buenas costumbres generalmente aceptadas. A tal efecto, el USUARIO se obliga y compromete a NO utilizar cualquiera de los Contenidos con fines o efectos il&iacute;citos, prohibidos en el Aviso Legal o por la legislaci&oacute;n vigente, lesivos de los derechos e intereses de terceros, o que de cualquier forma puedan da&ntilde;ar, inutilizar, sobrecargar, deteriorar o impedir la normal utilizaci&oacute;n de los Contenidos, los equipos inform&aacute;ticos o los documentos, archivos y toda clase de contenidos almacenados en cualquier equipo inform&aacute;tico propios o contratados por Adriana Bernardo Navarro , de otros USUARIOS o de cualquier USUARIO de Internet (hardware y software).</p>
-<p>El USUARIO se obliga y se compromete a no transmitir, difundir o poner a disposici&oacute;n de terceros cualquier clase de material contenido en la P&aacute;gina, tales como informaciones, textos, datos, contenidos, mensajes, gr&aacute;ficos, dibujos, archivos de sonido y/o imagen, fotograf&iacute;as, grabaciones, software, logotipos, marcas, iconos, tecnolog&iacute;a, fotograf&iacute;as, software, enlaces, dise&ntilde;o gr&aacute;fico y c&oacute;digos fuente, o cualquier otro material al que tuviera acceso en su condici&oacute;n de USUARIO de la P&aacute;gina, sin que esta enumeraci&oacute;n tenga car&aacute;cter limitativo. Asimismo, de conformidad con todo ello, el USUARIO no podr&aacute;:</p>
-<p>Reproducir, copiar, distribuir, poner a disposici&oacute;n o de cualquier otra forma comunicar p&uacute;blicamente, transformar o modificar los Contenidos, a menos que se cuente con la autorizaci&oacute;n escrita y expl&iacute;cita de Adriana Bernardo Navarro, que es titular de los correspondientes derechos, o bien que ello resulte legalmente permitido.<br />Suprimir, manipular o de cualquier forma alterar el &ldquo;copyright&rdquo; y dem&aacute;s datos identificativos de la reserva de derechos de Adriana Bernardo Navarro o de sus titulares, de las huellas y/o identificadores digitales, o de cualesquiera otros medios t&eacute;cnicos establecidos para su reconocimiento.<br />El USUARIO deber&aacute; abstenerse de obtener e incluso de intentar obtener los Contenidos empleando para ello medios o procedimientos distintos de los que, seg&uacute;n los casos, se hayan puesto a su disposici&oacute;n a este efecto o se hayan indicado a este efecto en las p&aacute;ginas Web donde se encuentren los Contenidos o, en general, de los que se empleen habitualmente en Internet a este efecto siempre que no entra&ntilde;en un riesgo de da&ntilde;o o inutilizaci&oacute;n de la P&aacute;gina, y/o de los Contenidos.</p>
-<p>PROPIEDAD INTELECTUAL<br />Todas las marcas, nombres comerciales o signos distintivos de cualquier clase que aparecen en la P&aacute;gina son propiedad de Adriana Bernardo Navarro o, en su caso, de terceros que han autorizado su uso, sin que pueda entenderse que el uso o acceso al Portal y/o a los Contenidos atribuya al USUARIO derecho alguno sobre las citadas marcas, nombres comerciales y/o signos distintivos, y sin que puedan entenderse cedidos al USUARIO, ninguno de los derechos de explotaci&oacute;n que existen o puedan existir sobre dichos Contenidos. De igual modo los Contenidos son propiedad intelectual de Adriana Bernardo Navarro, o de terceros en su caso, por tanto, los derechos de Propiedad Intelectual son titularidad de Adriana Bernardo Navarro, o de terceros que han autorizado su uso, a quienes corresponde el ejercicio exclusivo de los derechos de explotaci&oacute;n de los mismos en cualquier forma y, en especial, los derechos de reproducci&oacute;n, distribuci&oacute;n, comunicaci&oacute;n p&uacute;blica y transformaci&oacute;n. La utilizaci&oacute;n no autorizada de la informaci&oacute;n contenida en esta Web, as&iacute; como la lesi&oacute;n de los derechos de Propiedad Intelectual o Industrial de Adriana Bernardo Navarro o de terceros incluidos en la P&aacute;gina que hayan cedido contenidos dar&aacute; lugar a las responsabilidades legalmente establecidas.</p>
-<p>ENLACES<br />Aquellas personas que se propongan establecer enlaces entre su p&aacute;gina Web y la P&aacute;gina deber&aacute;n observar y cumplir las condiciones siguientes:</p>
-<p>No ser&aacute; necesaria autorizaci&oacute;n previa cuando el enlace permita &uacute;nicamente el acceso a la p&aacute;gina de inicio, pero no podr&aacute; reproducirla de ninguna forma. Cualquier otra forma de enlace requerir&aacute; la autorizaci&oacute;n expresa e inequ&iacute;voca por escrito por parte de Adriana Bernardo Navarro<br />No se crear&aacute;n &ldquo;marcos&rdquo; (&ldquo;frames&rdquo;) con las p&aacute;ginas Web ni sobre las p&aacute;ginas Web de Adriana Bernardo Navarro<br />No se realizar&aacute;n manifestaciones o indicaciones falsas, inexactas, u ofensivas sobre Adriana Bernardo Navarro sus directivos, sus empleados o colaboradores, o de las personas que se relacionen en la P&aacute;gina por cualquier motivo, o de los USUARIOS de las P&aacute;gina, o de los Contenidos suministrados.<br />No se declarar&aacute; ni se dar&aacute; a entender que Adriana Bernardo Navarro ha autorizado el enlace o que ha supervisado o asumido de cualquier forma los Contenidos ofrecidos o puestos a disposici&oacute;n de la p&aacute;gina Web en la que se establece el enlace.<br />La p&aacute;gina Web en la que se establezca el enlace solo podr&aacute; contener lo estrictamente necesario para identificar el destino del enlace.<br />La p&aacute;gina Web en la que se establezca el enlace no contendr&aacute; informaciones o contenidos il&iacute;citos, contrarios a la moral y a las buenas costumbres generalmente aceptadas y al orden p&uacute;blico, as&iacute; como tampoco contendr&aacute; contenidos contrarios a cualesquiera derechos de terceros.<br />DISPONIBILIDAD DE LA P&Aacute;GINA<br />Adriana Bernardo Navarro no garantiza la inexistencia de interrupciones o errores en el acceso a la P&aacute;gina, a sus Contenidos, ni que &eacute;ste se encuentren actualizados, aunque desarrollar&aacute; sus mejores esfuerzos para, en su caso, evitarlos, subsanarlos o actualizarlos. Por consiguiente, Adriana Bernardo Navarro no se responsabiliza de los da&ntilde;os o perjuicios de cualquier tipo producidos en el USUARIO que traigan causa de fallos o desconexiones en las redes de telecomunicaciones que produzcan la suspensi&oacute;n, cancelaci&oacute;n o interrupci&oacute;n del servicio del Portal durante la prestaci&oacute;n del mismo o con car&aacute;cter previo.</p>
-<p>Adriana Bernardo Navarro excluye, con las excepciones contempladas en la legislaci&oacute;n vigente, cualquier responsabilidad por los da&ntilde;os y perjuicios de toda naturaleza que puedan deberse a la falta de disponibilidad, continuidad o calidad del funcionamiento de la P&aacute;gina y de los Contenidos, al no cumplimiento de la expectativa de utilidad que los USUARIOS hubieren podido atribuir a la P&aacute;gina y a los Contenidos.</p>
-<p>La funci&oacute;n de los enlaces que aparecen en esta Web es exclusivamente la de informar al USUARIO acerca de la existencia de otras Web que contienen informaci&oacute;n sobre la materia. Dichos enlaces no constituyen sugerencia ni recomendaci&oacute;n alguna.</p>
-<p>Adriana Bernardo Navarro no se hace responsable de los contenidos de dichas p&aacute;ginas enlazadas, del funcionamiento o utilidad de los enlaces ni del resultado de dichos enlaces, ni garantiza la ausencia de virus u otros elementos en los mismos que puedan producir alteraciones en el sistema inform&aacute;tico (hardware y software), los documentos o los ficheros del USUARIO, excluyendo cualquier responsabilidad por los da&ntilde;os de cualquier clase causados al USUARIO por este motivo.</p>
-<p>El acceso a la P&aacute;gina no implica la obligaci&oacute;n por parte de Adriana Bernardo Navarro de controlar la ausencia de virus, gusanos o cualquier otro elemento inform&aacute;tico da&ntilde;ino. Corresponde al USUARIO, en todo caso, la disponibilidad de herramientas adecuadas para la detecci&oacute;n y desinfecci&oacute;n de programas inform&aacute;ticos da&ntilde;inos, por lo tanto, Adriana Bernardo Navarro no se hace responsable de los posibles errores de seguridad que se puedan producir durante la prestaci&oacute;n del servicio de la P&aacute;gina, ni de los posibles da&ntilde;os que puedan causarse al sistema inform&aacute;tico del USUARIO o de terceros (hardware y software), los ficheros o documentos almacenados en el mismo, como consecuencia de la presencia de virus en el ordenador del USUARIO utilizado para la conexi&oacute;n a los servicios y contenidos de la Web, de un mal funcionamiento del navegador o del uso de versiones no actualizadas del mismo.</p>
-<p>CALIDAD DE LA P&Aacute;GINA<br />Dado el entorno din&aacute;mico y cambiante de la informaci&oacute;n y servicios que se suministran por medio de la P&aacute;gina, Adriana Bernardo Navarro realiza su mejor esfuerzo, pero no garantiza la completa veracidad, exactitud, fiabilidad, utilidad y/o actualidad de los Contenidos. La informaci&oacute;n contenida en las p&aacute;ginas que componen este Portal s&oacute;lo tiene car&aacute;cter informativo, consultivo, divulgativo y publicitario. En ning&uacute;n caso ofrecen ni tienen car&aacute;cter de compromiso vinculante o contractual.</p>
-<p>LIMITACI&Oacute;N DE RESPONSABILIDAD<br />Adriana Bernardo Navarro excluye toda responsabilidad por las decisiones que el USUARIO pueda tomar basado en esta informaci&oacute;n, as&iacute; como por los posibles errores tipogr&aacute;ficos que puedan contener los documentos y gr&aacute;ficos de la P&aacute;gina. La informaci&oacute;n est&aacute; sometida a posibles cambios peri&oacute;dicos sin previo aviso de su contenido por ampliaci&oacute;n, mejora, correcci&oacute;n o actualizaci&oacute;n de los Contenidos.</p>
-<p>NOTIFICACIONES<br />Todas las notificaciones y comunicaciones por parte de Adriana Bernardo Navarro al USUARIO realizados por cualquier medio se considerar&aacute;n eficaces a todos los efectos.</p>
-<p>DISPONIBILIDAD DE LOS CONTENIDOS<br />La prestaci&oacute;n del servicio de la P&aacute;gina y de los Contenidos tiene, en principio, duraci&oacute;n indefinida. Adriana Bernardo Navarro, no obstante, queda autorizada para dar por terminada o suspender la prestaci&oacute;n del servicio de la P&aacute;gina y/o de cualquiera de los Contenidos en cualquier momento. Cuando ello sea razonablemente posible, Adriana Bernardo Navarro advertir&aacute; previamente la terminaci&oacute;n o suspensi&oacute;n de la P&aacute;gina.</p>
-<p>JURISDICCI&Oacute;N<br />Para cuantas cuestiones se susciten sobre la interpretaci&oacute;n, aplicaci&oacute;n y cumplimiento de este Aviso Legal, as&iacute; como de las reclamaciones que puedan derivarse de su uso, todos las partes intervinientes se someten a los Jueces y Tribunales de Valencia, renunciando de forma expresa a cualquier otro fuero que pudiera corresponderles. Legislaci&oacute;n aplicable El Aviso Legal se rige por la ley espa&ntilde;ola. Copyright &copy; 2016 &ndash; Adriana Bernardo Navarro</p>
-<p>Reservados todos los derechos de autor por las leyes y tratados internacionales de propiedad intelectual. Queda expresamente prohibida su copia, reproducci&oacute;n o difusi&oacute;n, total o parcial, por cualquier medio.</p>
-<p>DIRECCI&Oacute;N FISCAL<br />Felix Pizcueta, 18<br />46004 Valencia.</p></p>
+          <p class="project-subtitle" style="text-align: justify;">El presente Aviso Legal regula las condiciones generales de acceso y utilización del sitio web accesible en la dirección https://demihermana.com (en adelante, el sitio web), que demihermana pone a disposición de los usuarios de Internet.</p>
+          <p class="project-subtitle" style="text-align: justify;">La utilización del sitio web implica la aceptación plena y sin reservas de todas y cada una de las disposiciones incluidas en este Aviso Legal. En consecuencia, el usuario del sitio web debe leer atentamente el presente Aviso Legal en cada una de las ocasiones en que se proponga utilizar la web, ya que el texto podría sufrir modificaciones a criterio del titular de la web, o a causa de un cambio legislativo, jurisprudencial o en la práctica empresarial.</p>
+          <p class="project-title" style="font-size: 1em !important;"><b>1.- TITULARIDAD DEL SITIO WEB.</b></p>
+          <p class="project-subtitle" style="text-align: justify;">Nombre del titular: María del Carmen Cabrerizo Ortiz</p>
+          <p class="project-subtitle" style="text-align: justify;">Domicilio: Avenida Santo Ángel de la Guarda, 7 1, 28039 Madrid</p>
+          <p class="project-subtitle" style="text-align: justify;">NIF: 05712114H</p>
+          <p class="project-subtitle" style="text-align: justify;">Correo electrónico: info@demihermana.com</p>
+          <p class="project-title" style="font-size: 1em !important;"><b>2.- OBJETO.</b></p>
+          <p class="project-subtitle" style="text-align: justify;">El sitio web facilita a los usuarios del mismo el acceso a información y servicios prestados por demihermana a aquellas personas u organizaciones interesadas en los mismos.</p>
+          <p class="project-title" style="font-size: 1em !important;"><b>3.- ACCESO Y UTILIZACIÓN DE LA WEB.</b></p>
+          <p class="project-subtitle" style="text-align: justify;">3.1.- Carácter gratuito del acceso y utilización de la web. El acceso a la web tiene carácter gratuito para los usuarios de la misma.</p>
+          <p class="project-subtitle" style="text-align: justify;">3.2.- Registro de usuarios. Con carácter general el acceso y utilización de la web no exige la previa suscripción o registro de los usuarios de la misma.</p>
+          <p class="project-title" style="font-size: 1em !important;"><b>4.- CONTENIDOS DE LA WEB.</b></p>
+          <p class="project-subtitle" style="text-align: justify;">El idioma utilizado por el titular en la web será el castellano.</p>
+          <p class="project-subtitle" style="text-align: justify;">demihermana no se responsabiliza de la no comprensión o entendimiento del idioma de la web por el usuario, ni de sus consecuencias.</p>
+          <p class="project-subtitle" style="text-align: justify;">demihermana podrá modificar los contenidos sin previo aviso, así como suprimir y cambiar éstos dentro de la web, como la forma en que se accede a éstos, sin justificación alguna y libremente, no responsabilizándose de las consecuencias que los mismos puedan ocasionar a los usuarios.</p>
+          <p class="project-subtitle" style="text-align: justify;">Se prohíbe el uso de los contenidos de la web para promocionar, contratar o divulgar publicidad o información propia o de terceras personas sin la autorización de demihermana ni remitir publicidad o información valiéndose para ello de los servicios o información que se ponen a disposición de los usuarios, independientemente de si la utilización es gratuita o no.</p>
+          <p class="project-subtitle" style="text-align: justify;">Los enlaces o hiperenlaces que incorporen terceros en sus páginas web, dirigidos a esta web, serán para la apertura de la página web completa, no pudiendo manifestar, directa o indirectamente, indicaciones falsas, inexactas o confusas, ni incurrir en acciones desleales o ilícitas en contra de demihermana.</p>
+          <p class="project-title" style="font-size: 1em !important;"><b>5.- LIMITACIÓN DE RESPONSABILIDAD.</b></p>
+          <p class="project-subtitle" style="text-align: justify;">Tanto el acceso a la web como el uso no consentido que pueda efectuarse de la información contenida en la misma es de la exclusiva responsabilidad de quien lo realiza. demihermana no responderá de ninguna consecuencia, daño o perjuicio que pudieran derivarse de dicho acceso o uso.</p>
+          <p class="project-subtitle" style="text-align: justify;">demihermana no se hace responsable de los errores de seguridad, que se puedan producir ni de los daños que puedan causarse al sistema informático del usuario (hardware y software), o a los ficheros o documentos almacenados en el mismo, como consecuencia de:</p>
+          <p class="project-subtitle" style="text-align: justify;">- La presencia de un virus en el ordenador del usuario que sea utilizado para la conexión a los servicios y contenidos de la web.</p>
+          <p class="project-subtitle" style="text-align: justify;">- Un mal funcionamiento del navegador y/o del uso de versiones no actualizadas del mismo.</p>
+          <p class="project-subtitle" style="text-align: justify;">demihermana no se hace responsable de la fiabilidad y rapidez de los hiperenlaces que se incorporen en la web para la apertura de otras.</p>
+          <p class="project-subtitle" style="text-align: justify;">demihermana no garantiza la utilidad de estos enlaces, ni se responsabiliza de los contenidos o servicios a los que pueda acceder el usuario por medio de estos enlaces, ni del buen funcionamiento de estas webs.</p>
+          <p class="project-subtitle" style="text-align: justify;">demihermana no será responsable de los virus o demás programas informáticos que deterioren o puedan deteriorar los sistemas o equipos informáticos de los usuarios al acceder a su web u otras webs a las que se haya accedido mediante enlaces de esta web.</p>
+          <p class="project-title" style="font-size: 1em !important;"><b>6.- EMPLEO DE LA TECNOLOGÍA “COOKIE”.</b></p>
+          <p class="project-subtitle" style="text-align: justify;">La web emplea cookies, puede consultar nuestra Política de Cookies, que respeta en todo momento la confidencialidad e intimidad del mismo.</p>
+          <p class="project-title" style="font-size: 1em !important;"><b>7.- PROPIEDAD INTELECTUAL E INDUSTRIAL.</b></p>
+          <p class="project-subtitle" style="text-align: justify;">Son propiedad de demihermana todos los derechos de propiedad industrial e intelectual de la web, así como de los contenidos que alberga. Cualquier uso de la web o sus contenidos deberá tener un carácter exclusivamente particular.</p>
+          <p class="project-subtitle" style="text-align: justify;">Está reservado exclusivamente a demihermana cualquier otro uso que suponga la copia, reproducción, distribución, transformación, comunicación pública o cualquier otra acción similar, de todo o parte de los contenidos de la web, por lo que ningún usuario podrá llevar a cabo estas acciones sin la autorización previa y por escrito de demihermana.</p>
+          <p class="project-title" style="font-size: 1em !important;"><b>8.- LEGISLACIÓN APLICABLE Y JURISDICCIÓN COMPETENTE.</b></p>
+          <p class="project-subtitle" style="text-align: justify;">El presente Aviso Legal se interpretará y regirá de conformidad con la legislación española. demihermana y los usuarios, con renuncia expresa a cualquier otro fuero que pudiera corresponderles, se someten al de los juzgados y tribunales del domicilio del usuario para cualquier controversia que pudiera derivarse del acceso o uso de la web. En el caso de que el usuario tenga su domicilio fuera de España, demihermana y el usuario, se someten, con renuncia expresa a cualquier otro fuero, a los juzgados y tribunales del domicilio de Madrid.</p>
         </div>
         <div class="col-lg-2"></div>
       </div>
       
   </section>
 
-  <!-- ---------- INSTAGRAM ---------- -->
-
-  <!--<section class="page-section" id="instagram" style="padding-top:0px !important;">
-    <div class="container">
-      <hr style="margin-top:50px;margin-bottom: 50px;margin-right:25px;width: 100%;border-color: #dbafa9 !important">
-      <div class="row text-center">
-        <div class="col-md-12" style="margin-bottom:20px;">
-          <p class="text-normal text-uppercase" style="color:rgb(187,117,107);text-align: center">Sígueme en Instagram</p>
-        </div>
-        <div class="col-md-12" style="max-width: 1000px; margin:auto; margin-bottom:20px;">
-          <-- LightWidget WIDGET -><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/4c973eced5625b7683011bed77fce918.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
-        </div>
-      </div>
-    </div>
-  </section>-->
-
   <!-- ---------- FOOTER ---------- -->
 
   <footer class="footer bg-light">
     <div class="container">
       <div class="row align-items-center">
-        <!--<div class="col-md-4"></div>-->
+        <div class="col-md-12">
+          <img src="img/logos/Logo-Blanco-pequeñorosa.png" style="width: 150px;padding-top:2em;padding-bottom:1em;">
+        </div>
         <div class="col-md-12">
           <ul class="list-inline social-buttons">
-            <li class="list-inline-item">
+            <li class="list-inline-item" id="hoja_socbut">
               <img src="img/hojas1.png" style="max-width: 60px;">
             </li>
             <li class="list-inline-item">
               <a href="about" class="text-normal" style="font-size: 0.85em;color:#bb756b;text-align: center;">About
-                <!--<i class="fas fa-paper-plane fa-2x" style="color: #bb756b !important;"></i>-->
               </a>
             </li>
             <li class="list-inline-item">
@@ -168,15 +192,25 @@
               </a>
             </li>
             <li class="list-inline-item">
+              <a href="https://open.spotify.com/user/v3z9wt6wvsrx1tqvvc3gk2vqb?si=20d3407ee5df43c6" class="text-normal" style="font-size: 0.85em;color:#bb756b;text-align: center;" target="_blank">Spotify
+              </a>
+            </li>
+            <li class="list-inline-item" id="hoja_socbut">
               <img src="img/hojas2.png" style="max-width: 60px;">
             </li>
           </ul>
         </div>
     </div>
     <div class="container">
-      <div class="col-md-12" style="margin-top:40px;margin-bottom:20px;">
-          <span class="text-normal" style="color: #bb756b !important;font-size: 0.85em">Copyright &copy; Demihermana  <span id="year"></span></span>
-        </div>
+      <hr style="margin-top:2em;width: 80%;margin-bottom:30px;">
+      <div class="col-md-12" style="margin-top:30px;margin-bottom:40px;">
+        <span class="text-normal" style="color: #bb756b !important;font-size: 0.8em"><a href="./aviso-legal" style="color: #bb756b !important;">Aviso legal</a></span>
+        <span class="text-normal" style="color: #bb756b !important;font-size: 0.8em"><a href="./politica-de-cookies" style="color: #bb756b !important;">Política de cookies</a></span>
+        <span class="text-normal" style="color: #bb756b !important;font-size: 0.8em"><a href="./politica-de-privacidad" style="color: #bb756b !important;">Política de privacidad</a></span>
+      </div>
+      <div style="margin-bottom:20px;">
+        <span class="text-normal" style="color: #bb756b !important;font-size: 0.8em">&copy; Demihermana</span>
+      </div>
     </div>
   </footer>
 
@@ -187,18 +221,9 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Contact form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
+  <!--<script src="vendor/jquery-easing/jquery.easing.min.js"></script> -->
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.js"></script>
-  <script type="text/javascript" src="js/instafeed.min.js"></script>
-
-  <script>
-    document.getElementById("year").innerHTML = new Date().getFullYear();
-  </script>
 
 </html>

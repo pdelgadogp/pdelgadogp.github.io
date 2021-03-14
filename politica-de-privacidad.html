@@ -2,11 +2,11 @@
 <html lang="es">
 
 <head>
+  <title>Política de privacidad</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Política de Privacidad</title>
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/agency.css" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -16,15 +16,46 @@
   <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#2b5797">
   <meta name="theme-color" content="#ffffff">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-573Q7WQQZP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'analytics_storage': 'denied'
+    });
+    gtag('js', new Date());
+    gtag('set', 'allow_google_signals', false);
+    gtag('config', 'G-573Q7WQQZP', { 'anonymize_ip': true });
+  </script>
 </head>
 
 <body id="page-top" style="width:100%;">
 
+  <!-- cookie warning -->
+  <div class="fixed-bottom">
+      <div class="toast bg-dark text-white w-100 mw-100 fade hide" role="alert" data-autohide="false" style="border:0em !important;border-radius: 0em !important;text-align: center;background-color: #d2b6b1 !important;opacity: 0.8">
+          <div class="toast-body d-flex flex-column" style="max-width: 1500px !important;margin:auto">
+            <div class="row">
+              <div class="col-xl-11">
+                <p style="margin-bottom:0;padding:.75em;">Utilizamos cookies propias y de terceros para mejorar tu experiencia y analizar el tráfico de la misma. Puedes comprobar nuestra política de cookies <a href="politica-de-cookies">aquí</a>. Puedes leer en nuestra "Política de Privacidad" cómo tratamos tus datos y cómo ejercer tus derechos <a href="politica-de-privacidad">aquí</a>. Pulse "OK" para aceptar el uso de todas ellas. 
+              </div>
+              <div class="col-xl-1">
+                <div class="ml-auto" style="padding:.75em;">
+                  <button id="btnAccept" class="button-normal btn btn-primary text-uppercase" type="button" style="border-radius: 0 !important;font-size: 90% !important;padding: 1em 2em 1em 2em;background-color: #bb756b !important">OK</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
   <!-- ---------- NAVBAR ---------- -->
 
-  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" style="-webkit-transition:background-color 200ms linear;-ms-transition: background-color 200ms linear;transition: background-color 200ms linear;background-color: #f2efeb;box-shadow: 0 5px 10px -4px rgb(0 0 0 / 20%);">
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" style="display: inline;position: absolute;z-index: 1;width: 100%;">
     <div class="container justify-content-center" id="container-mainNav">
-      <div class="row row-top" style="margin:0 !important;padding: 0 !important;">
+      <div class="row row-top" style="margin:0 !important;padding: 0 !important;width: 100%">
         <div class="container justify-content-center menu-hidden" style="padding:0em;display: inline;">
           <div class="row" style="padding: 0.15em;">
             <div class="col-2">
@@ -32,8 +63,8 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             </div>
-            <div class="col-8">
-              <img id="img-navhidden" src="img/logos/Logo Rosa.png" style="width:100%;display:none;" href="/">
+            <div class="col-8" style="text-align: center;">
+              <a class="nav-link js-scroll-trigger" href="/" style="padding:0em !important"><img id="img-navhidden" src="img/logos/Logo Rosa.png" style="width:100%;display:none;max-width: 250px;"></a>
             </div>
             <div class="col-2">
             </div>
@@ -43,8 +74,8 @@
           <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase" style="margin-top: 0px">
               <hr class="w-100" style="border-color: #D7D7D7; margin-bottom: 0.25em;">
-              <li class="nav-item nav-item-show" href="/" style="cursor: pointer;">
-                <a class="nav-link js-scroll-trigger" style="padding-bottom:1.1em !important;width:175px !important;"><img src="img/logos/Logo Rosa.png" style="width:100%;" id="myImage"></a>
+              <li class="nav-item nav-item-show" id="img-fullwidth">
+                <a class="nav-link js-scroll-trigger" style="padding-bottom:1.4em !important;padding-top:0.9em !important;width:225px !important;" href="/"><img src="img/logos/Logo Rosa.png" style="width:100%;"></a>
               </li>
               <hr class="w-100" style="border-color: transparent;margin:0.3em;">
             </ul>
@@ -53,27 +84,20 @@
         <div class="container justify-content-center">
           <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase" style="margin-top: 0px">
-              <!--<hr class="w-100" style="border-color: #D7D7D7;">-->
               <li class="nav-item" style="margin-left:0px;">
-                <a class="nav-link nav-link-scroll js-scroll-trigger" onclick="window.scrollTo({top:0,behavior:'smooth'});" style="cursor: pointer;">Inicio</a>
+                <a class="nav-link nav-link-scroll js-scroll-trigger" href="/">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="about.html">About</a>
+                <a class="nav-link js-scroll-trigger" href="about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="bordados.html">Bordados</a>
-              </li>
-              <!--<li class="nav-item nav-item-show" onclick="window.scrollTo({top:0,behavior:'smooth'});" style="cursor: pointer;">
-                <a class="nav-link js-scroll-trigger" style="padding-bottom:0.25em !important;"><img src="img/logos/Logo-Blanco-pequeñorosa.png" style="height: 50px;" id="myImage"></a>
+                <a class="nav-link js-scroll-trigger" href="bordados">Bordados</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="papeleria.html">Papelería</a>
-              </li>-->
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="proyectos.html">Proyectos</a>
+                <a class="nav-link js-scroll-trigger" href="proyectos">Proyectos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="contacto.html">Contacto</a>
+                <a class="nav-link js-scroll-trigger" href="contacto">Contacto</a>
               </li>
               <hr class="w-100" style="border-color: transparent;margin:0.3em;">
             </ul>
@@ -84,74 +108,63 @@
         </div>
       </div>
     </div>
+    <div class="container justify-content-center" id="container-announcement" style="padding-top:0.5em;padding-left:0em !important;padding-right:0em !important;max-width: 3000px !important;transition: all ease 0.5s;-webkit-transition: .5s;">
+      <p class="project-subtitle" style="background-color:#d1a69e;width: 100%;color:white;font-size: 0.85em;margin-bottom:0em !important;padding:0.65em;word-spacing: 1px;">Todos los bordados se crean bajo pedido</p>
+    </div>
   </nav>
 
-  <!-- ---------- HEADER ---------- -->
 
-  <header class="masthead" id="SLIDE_BG">
-    <div id="preload" style="display:none">
-      <!--<img src="img/index/header-bg-11.jpeg" />
-      <img src="img/index/header-bg-22.jpeg" />
-      <img src="img/index/header-bg-33.jpeg" />-->
-      <img src="img/index/header-bg-44.jpeg" />
-    </div>
-    <div class="container">
-      <div class="intro-text">
-        <!--<img id="logo-landing" src="img/logos/Logo-Blanco.png" style="width:30%;">
-        <div class="row justify-content-center" style="bottom: 0;position: absolute;padding-bottom: 10vh;left: 0;right: 0;margin-left: auto;margin-right: auto;">
-          <a class="ct-btn-scroll ct-js-btn-scroll" onclick="changeBackground(1);"><img alt="Arrow Down Icon" src="img/index/arrow-left.png" style="width: 70%;cursor: pointer;"></a>
-          <a class="ct-btn-scroll ct-js-btn-scroll" onclick="changeBackground(0);"><img alt="Arrow Down Icon" src="img/index/arrow-right.png" style="width: 70%;cursor: pointer;"></a>
-        </div>
-      </div>-->
-    </div>
-  </header>
+  <!-- --------- POLITICA DE PRIVACIDAD ---------- -->
 
-  <!-- --------- COLLAGE ---------- -->
-
-  <section class="page-section" id="portfolio" style="padding-bottom:10px !important;">
-    <div class="container">
+  <section class="page-section" id="portfolio">
+    <div class="container" style="text-align: center">
       <div class="row">
-        <div class="col-lg-12 text-center" style="padding: 0px;">
-          <img src="img/index/collage-carmen.jpg" style="margin-bottom: 60px; margin-top: 50px; width:100%">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8" style="align-self:center;padding-bottom:1em;">
+          <p class="project-title" style="text-align: center;">Política de Privacidad</p>
+          <hr style="width: 60%;border-color: #dbafa9 !important">
+          <p class="project-subtitle" style="text-align: justify;">La presente Política de Privacidad (en adelante, la “POLÍTICA DE PRIVACIDAD”) regula, con carácter general, la recogida y tratamiento por parte de demihermana.com de los datos personales que usted nos facilita como usuario de la página web accesible a través del nombre de dominio https://demihermana.com (en adelante, el “WEBSITE”), incluidos los servicios que en cada momento se encuentren disponibles a través del WEBSITE. Todo ello sin perjuicio de las previsiones específicas establecidas en determinadas secciones, formularios o servicios disponibles en el WEBSITE al objeto de facilitarle la información pertinente y, en su caso, recabar su consentimiento.</p>
+          <p class="project-subtitle" style="text-align: justify;">demihermana.com se reserva el derecho a modificar la POLÍTICA DE PRIVACIDAD para adaptarla a novedades legislativas, jurisprudencia y/o administrativas, así como a las prácticas que desarrolle en cada momento a través del WEBSITE, teniendo en todo momento en cuenta sus derechos e intereses.</p>
+          <p class="project-subtitle" style="text-align: justify;">En todo caso demihermana.com le proporcionará los recursos técnicos adecuados para que pueda acceder a la POLÍTICA DE PRIVACIDAD en aras a dar debido cumplimiento a las obligaciones de información que nos corresponde observar de conformidad con la normativa aplicable en materia de protección de datos.</p>
+          <p class="project-title" style="font-size: 1em !important;"><b>1. ¿QUIÉN ES EL RESPONSABLE DEL TRATAMIENTO DE SUS DATOS?</b></p>
+          <p class="project-subtitle" style="text-align: justify;">El Responsable del Tratamiento de sus datos es María del Carmen Cabrerizo Ortiz con domicilio en Avenida Santo Ángel de la Guarda 7, 1A, 28039 Madrid, con N.I.F. nº 05712114H.</p>
+          <p class="project-subtitle" style="text-align: justify;">Para cualquier cuestión relacionada con la POLÍTICA DE PRIVACIDAD y/o el tratamiento de sus datos personales puede contactar en la dirección postal antes indicada y/o a través de la dirección de correo electrónico info@demihermana.com</p>
+          <p class="project-title" style="font-size: 1em !important;"><b>2. ¿CÓMO HEMOS OBTENIDO SUS DATOS?</b></p>
+          <p class="project-subtitle" style="text-align: justify;">Los datos que se tratan en demihermana.com han sido obtenidos de usted mismo, a través de (i) los distintos formularios que cumplimente durante la navegación a través del WEBSITE (si los hubiera) y (ii) mediante la remisión de un correo electrónico o mensaje de consulta.</p>
+          <p class="project-subtitle" style="text-align: justify;">En el caso de que los datos personales aportados pertenecieran a un tercero, usted garantiza que ha informado a dicho tercero de la POLÍTICA DE PRIVACIDAD y ha obtenido su autorización para facilitar sus datos a demihermana.com con las finalidades que se señalan más adelante.</p>
+          <p class="project-subtitle" style="text-align: justify;">Adicionalmente le informamos del posible tratamiento de sus datos de redes sociales a través de los perfiles que demihermana.com mantiene disponible en cada red social en la que se encuentra presente, todo ello en los términos y condiciones establecidos en cada red social.</p>
+          <p class="project-title" style="font-size: 1em !important;"><b>3. ¿QUÉ TIPO DE DATOS TRATAMOS?</b></p>
+          <p class="project-subtitle" style="text-align: justify;">Los datos que se tratan en demihermana.com son aquellos que usted nos hubiera proporcionado durante su navegación por el WEBSITE, a través de los formularios que pudiéramos emplear para formalizar nuestro contacto con usted y/o a través de correo electrónico, así como aquellos otros que, en su caso, se obtengan a través de los perfiles corporativos de demihermana.com en las redes sociales en las que se esté presente.</p>
+          <p class="project-subtitle" style="text-align: justify;">En particular en demihermana.com se tratan las siguientes categorías de datos:<br> - Datos identificativos y de contacto (e.g. nombre, apellidos, dirección postal y electrónica, teléfono, etc.).<br> - Datos de navegación en Internet (e.g. dirección IP, visitas a páginas web, etc.). </p>
+          <p class="project-title" style="font-size: 1em !important;"><b>4. ¿CON QUÉ FINALIDAD TRATAMOS SUS DATOS Y BAJO QUÉ LEGITIMACIÓN?</b></p>
+          <p class="project-subtitle" style="text-align: justify;">El tratamiento de sus datos personales persigue las siguientes finalidades:<br>
+           - Gestionar el acceso y utilización por su parte de los contenidos y servicios que demihermana.com pone a su disposición a través del WEBSITE, incluidos los servicios de blog, redes sociales o cualesquiera otras funcionalidades que en cada momento resulten accesibles desde el WEBSITE.<br>
+           - Tramitar y gestionar la contratación de productos o servicios que, en su caso, formalice con demihermana.com a través del WEBSITE, gestionar el envío de dichos productos y, en general, mantener, gestionar y contralar la relación contractual que establezca con nosotros como adquirente de nuestros productos o servicios.<br>
+           - Tramitar y gestionar la solicitud de información, sugerencias, quejas o reclamaciones que realice a través del WEBSITE o del correo electrónico.<br>
+           - Remitirle por diferentes medios, incluido electrónicos, comunicaciones comerciales y publicitarias de demihermana.com, respecto de productos, servicios, ofertas, promociones y cualesquiera otras informaciones relevantes referentes a dicha entidad, siempre que usted lo hubiera consentido.<br>
+           - El tratamiento de sus datos personales por parte de demihermana.com, conforme a la normativa aplicable, se basa (i) en su consentimiento, otorgado en el momento de la captación de sus datos personales que usted nos facilita voluntariamente a través de los mecanismos habilitados al efecto en el WEBSITE; (ii) en la relación establecida con nosotros en los supuestos de contratación de nuestros productos y servicios; o (iii) en el interés legítimo de demihermana.com.</p>
+          <p class="project-subtitle" style="text-align: justify;">Le recordamos que, en cualquier momento, en los casos en los que el tratamiento se base en su consentimiento, puede revocarlo libremente y de forma gratuita, en los términos que se indican en el apartado siguiente.</p>
+          <p class="project-title" style="font-size: 1em !important;"><b>5. ¿A QUIÉN COMUNICAMOS SUS DATOS?</b></p>
+          <p class="project-subtitle" style="text-align: justify;">Al margen de aquéllos supuestos en los que demihermana.com, esté obligado a ello por imperativo legal (e.g. Administraciones Tributarias, Administración de Justicia u otras Administraciones Públicas), sus datos no serán objeto de comunicación a terceras entidades. No está previsto que se realicen transferencias internacionales de sus datos.</p>
+          <p class="project-title" style="font-size: 1em !important;"><b>6. ¿POR CUÁNTO TIEMPO CONSERVAREMOS SUS DATOS? </b></p>
+          <p class="project-subtitle" style="text-align: justify;">Con carácter general, los datos personales serán conservados en tanto usted no revoque su consentimiento al tratamiento o solicite su supresión, así como el tiempo necesario para cumplir las obligaciones legales que demihermana.com debe observar.</p>
+          <p class="project-subtitle" style="text-align: justify;">En todo caso, le informamos de que demihermana.com tiene establecidas políticas internas de depuración de datos destinadas a controlar los plazos de conservación de los datos personales que obren en su poder, por lo que éstos podrán ser cancelados cuando dejen de ser necesarios y/o adecuados para la finalidad para la que hubieran sido recabados. </p>
+          <p class="project-title" style="font-size: 1em !important;"><b>7. ¿CUÁLES SON SUS DERECHOS?</b></p>
+          <p class="project-subtitle" style="text-align: justify;">La normativa aplicable en materia de protección de datos le otorga una serie de derechos relativos a sus datos personales que usted podrá ejercitar durante el tratamiento de los mismos. Dichos derechos son los que se le indican a continuación:</p>
+          <p class="project-subtitle" style="text-align: justify;"> - Acceso a sus datos: tiene derecho a acceder a sus datos para conocer qué datos personales que le conciernen estamos tratando.</p>
+          <p class="project-subtitle" style="text-align: justify;"> - Solicitar la rectificación o supresión de sus datos: en determinadas circunstancias, tiene derecho a rectificar aquellos datos personales inexactos que le conciernen que sean objeto de tratamiento por nuestra parte o, incluso, a solicitarnos su supresión cuando, entre otros motivos, los datos ya no fueran necesarios para los fines que fueron recogidos.</p>
+          <p class="project-subtitle" style="text-align: justify;"> - Solicitar la limitación del tratamiento de sus datos: en determinadas circunstancias, tiene derecho a solicitarnos la limitación del tratamiento de sus datos, en cuyo caso le informamos que únicamente los conservaremos para el ejercicio o defensa de reclamaciones tal y como prevé la normativa aplicable en materia de protección de datos.</p>
+          <p class="project-subtitle" style="text-align: justify;"> - A la portabilidad de sus datos: en determinadas circunstancias, tiene derecho a recibir los datos personales que le incumban, y que nos haya facilitado, en un formato estructurado, de uso común y lectura mecánica, y a transmitirlos a otro responsable del tratamiento.</p>
+          <p class="project-subtitle" style="text-align: justify;"> - Oponerse al tratamiento de sus datos: en determinadas circunstancias y por motivos relacionados con su situación particular, tiene derecho a oponerse al tratamiento de sus datos en cuyo caso, dejaríamos de tratarlos salvo que, por motivos legítimos imperiosos, o el ejercicio o la defensa de posibles reclamaciones, éstos deban ser conservados.</p>
+          <p class="project-subtitle" style="text-align: justify;"> - Asimismo, tiene derecho a retirar el consentimiento en cualquier momento, sin que ello afecte a la licitud del tratamiento basado en el consentimiento previo a su retirada.  </p>
+          <p class="project-subtitle" style="text-align: justify;"> - Podrá ejercer dichos derechos mediante solicitud escrita dirigida a demihermana.com, en la dirección postal indicada en el Apartado 1 o bien remitiendo un correo electrónico dirigido a la dirección info@demihermana.com</p>
+          <p class="project-subtitle" style="text-align: justify;">Finalmente indicar que puede interponer una reclamación ante la Autoridad de Control competente (en España, la Agencia Española de Protección de Datos), especialmente cuando no haya obtenido satisfacción en el ejercicio de sus derechos. Puede ponerse en contacto con dicha Autoridad a través de su página web: www.aepd.es.</p>
+          <p class="project-title" style="font-size: 1em !important;"><b>8. MEDIDAS DE SEGURIDAD</b></p>
+          <p class="project-subtitle" style="text-align: justify;">demihermana.com tratará sus datos en todo momento de forma absolutamente confidencial y guardando el preceptivo deber de secreto respecto de los mismos, de conformidad con lo previsto en la normativa de aplicación en materia de protección de datos, adoptando al efecto las medidas de índole técnica y organizativas necesarias que garanticen la seguridad de sus datos y eviten su alteración, pérdida, tratamiento o acceso no autorizado, habida cuenta del estado de la tecnología, la naturaleza de los datos almacenados y los riesgos a que están expuestos.</p>
         </div>
-        <div class="col-lg-12 text-center">
-          <a href="about.html">
-            <button id="sendMessageButton" class="button-normal btn btn-primary text-uppercase" type="submit" style="border-radius: 0 !important;font-size: 90% !important;">Saber más</button>
-          </a>
-        </div>
+        <div class="col-lg-2"></div>
       </div>
-	  </div>
-	</section>
-
-
-  <!-- ---------- BLOG ---------- --> 
-
-  <!--<section class="page-section" id="blog">
-    <div class="container" style="max-width: 100%">
-      <div class="row" style="">
-        <div class="col-md-12" style="background-image: url('img/index/blog.jpg');background-size:cover;height: 40vh;text-align: center;padding:150px 0;">
-          <img id="logo-landing" src="img/index/blog-letra.png" style="width:20%; margin-bottom: 30vh;">
-        </div>
-      </div>
-      <div class="row">
-      </div>
-    </div>
-  </section>-->
-
-  <!-- ---------- INSTAGRAM ---------- -->
-
-  <section class="page-section" id="instagram" style="padding-top:0px !important;">
-    <div class="container">
-      <hr style="margin-top:50px;margin-bottom: 50px;margin-right:25px;width: 100%;border-color: #dbafa9 !important">
-      <div class="row text-center">
-        <div class="col-md-12" style="margin-bottom:20px;">
-          <p class="text-normal text-uppercase" style="color:rgb(187,117,107);text-align: center">Sígueme en Instagram</p>
-        </div>
-        <div class="col-md-12" style="max-width: 1000px; margin:auto; margin-bottom:20px;">
-          <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/4c973eced5625b7683011bed77fce918.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
-      	</div>
-      </div>
-    </div>
+      
   </section>
 
   <!-- ---------- FOOTER ---------- -->
@@ -159,19 +172,20 @@
   <footer class="footer bg-light">
     <div class="container">
       <div class="row align-items-center">
-        <!--<div class="col-md-4"></div>-->
+        <div class="col-md-12">
+          <img src="img/logos/Logo-Blanco-pequeñorosa.png" style="width: 150px;padding-top:2em;padding-bottom:1em;">
+        </div>
         <div class="col-md-12">
           <ul class="list-inline social-buttons">
-            <li class="list-inline-item">
+            <li class="list-inline-item" id="hoja_socbut">
               <img src="img/hojas1.png" style="max-width: 60px;">
             </li>
             <li class="list-inline-item">
-              <a href="about.html" class="text-normal" style="font-size: 0.85em;color:#bb756b;text-align: center;">About
-                <!--<i class="fas fa-paper-plane fa-2x" style="color: #bb756b !important;"></i>-->
+              <a href="about" class="text-normal" style="font-size: 0.85em;color:#bb756b;text-align: center;">About
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="contacto.html" class="text-normal" style="font-size: 0.85em;color:#bb756b;text-align: center;">Contacto
+              <a href="contacto" class="text-normal" style="font-size: 0.85em;color:#bb756b;text-align: center;">Contacto
               </a>
             </li>
             <li class="list-inline-item">
@@ -183,19 +197,24 @@
               </a>
             </li>
             <li class="list-inline-item">
+              <a href="https://open.spotify.com/user/v3z9wt6wvsrx1tqvvc3gk2vqb?si=20d3407ee5df43c6" class="text-normal" style="font-size: 0.85em;color:#bb756b;text-align: center;" target="_blank">Spotify
+              </a>
+            </li>
+            <li class="list-inline-item" id="hoja_socbut">
               <img src="img/hojas2.png" style="max-width: 60px;">
             </li>
           </ul>
         </div>
     </div>
     <div class="container">
-      <hr style="margin-top:2em;width: 80%">
-      <div class="col-md-12" style="margin-top:30px;margin-bottom:20px;">
-        <span class="text-normal" style="color: #bb756b !important;font-size: 0.8em">Aviso legal</span><br>
-        <span class="text-normal" style="color: #bb756b !important;font-size: 0.8em">Política de privacidad</span>
+      <hr style="margin-top:2em;width: 80%;margin-bottom:30px;">
+      <div class="col-md-12" style="margin-top:30px;margin-bottom:40px;">
+        <span class="text-normal" style="color: #bb756b !important;font-size: 0.8em"><a href="./aviso-legal" style="color: #bb756b !important;">Aviso legal</a></span>
+        <span class="text-normal" style="color: #bb756b !important;font-size: 0.8em"><a href="./politica-de-cookies" style="color: #bb756b !important;">Política de cookies</a></span>
+        <span class="text-normal" style="color: #bb756b !important;font-size: 0.8em"><a href="./politica-de-privacidad" style="color: #bb756b !important;">Política de privacidad</a></span>
       </div>
       <div style="margin-bottom:20px;">
-        <span class="text-normal" style="color: #bb756b !important;font-size: 0.8em">Copyright &copy; Demihermana  <span id="year"></span></span>
+        <span class="text-normal" style="color: #bb756b !important;font-size: 0.8em">&copy; Demihermana</span>
       </div>
     </div>
   </footer>
@@ -207,18 +226,9 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Contact form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
+  <!--<script src="vendor/jquery-easing/jquery.easing.min.js"></script> -->
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.js"></script>
-  <script type="text/javascript" src="js/instafeed.min.js"></script>
-
-  <script>
-    document.getElementById("year").innerHTML = new Date().getFullYear();
-  </script>
 
 </html>
