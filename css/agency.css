@@ -153,7 +153,7 @@ header .container {
   font-family: 'Nunito Sans', sans-serif;
   color: #484848;
   padding: 0.5em;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .footer {
@@ -182,7 +182,7 @@ p {
 }
 
 a {
-  color: dimgrey;
+  color: #bb756b !important;
 }
 
 a:hover {
@@ -205,8 +205,8 @@ h6 {
 }
 
 section {
-  padding-top: 120px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 ::-moz-selection {
