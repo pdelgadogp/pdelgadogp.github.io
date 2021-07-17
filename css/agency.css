@@ -525,3 +525,9 @@ ul.social-buttons li a {
   padding-left: 20px;
   padding-right: 20px;
 }
+
+.carousel-indicators {
+  bottom:91%;
+  margin-left:7%;
+  margin-right:7%;
+}
